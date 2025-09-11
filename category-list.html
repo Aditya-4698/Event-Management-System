@@ -31,6 +31,9 @@
     <link href="../assets/js/plugins/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet" />
     <!-- CSS Files -->
     <link href="../assets/css/argon-dashboard.css?v=1.1.2" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body class="">
@@ -130,42 +133,80 @@
                     </div>
                 </form>
                 <ul class="navbar-nav">
-          <li class="nav-item  active ">
-            <a class="nav-link " href="../index.html">
-              <i class="ni ni-tv-2 text-primary"></i> <h2>Dashboard</h2>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link " href="../examples/venue-lists.html">
-              <i class="ni ni-planet text-blue"></i><h3>Venue</h3>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link " href="../examples/Event-list.html">
-              <i class="ni ni-pin-3 text-orange"></i><h3> Events</h3>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link " href="../examples/services-add.html">
-              <i class="ni ni-bullet-list-67 text-red"></i> <h3>Services</h3>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="../examples/login.html">
-              <i class="ni ni-key-25 text-info"></i> <h3>Login</h3>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="../examples/register.html">
-              <i class="ni ni-circle-08 text-pink"></i> <h3>Register</h3>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link  active " href="../examples/profile.html">
-              <i class="ni ni-single-02 text-yellow"></i> <h3>Profile</h3>
-            </a>
-          </li>
-        </ul>
+                    <li class="nav-item  active ">
+                        <a class="nav-link " href="../index.html">
+                            <i class="ni ni-tv-2 text-primary"></i>
+                            <h2>Dashboard</h2>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="../examples/venue-lists.html">
+                            <i class="ni ni-planet text-blue"></i>
+                            <h3>Venue</h3>
+                        </a>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../examples/category-list.html">
+                            <i class="ni ni-circle-08 text-pink"></i>
+                            <h3>Category</h3>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="../examples/services-add.html">
+                            <i class="ni ni-bullet-list-67 text-red"></i>
+                            <h3>Services</h3>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="../examples/services-add.html">
+                            <i class="ni ni-bullet-list-67 text-red"></i>
+                            <h3>Visitors</h3>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="../examples/services-add.html">
+                            <i class="ni ni-bullet-list-67 text-red"></i>
+                            <h3>Customers</h3>
+                        </a>
+                    </li>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="../examples/Event-list.html">
+                            <i class="ni ni-pin-3 text-orange"></i>
+                            <h3> Events</h3>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="../examples/Event-list.html">
+                            <i class="ni ni-pin-3 text-orange"></i>
+                            <h3> Event_Service</h3>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="../examples/Event-list.html">
+                            <i class="ni ni-pin-3 text-orange"></i>
+                            <h3> Payment</h3>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="../examples/Event-list.html">
+                            <i class="ni ni-pin-3 text-orange"></i>
+                            <h3> Feedback</h3>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../examples/login.html">
+                            <i class="ni ni-key-25 text-info"></i>
+                            <h3>Logout</h3>
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link  active " href="../examples/profile.html">
+                            <i class="ni ni-single-02 text-yellow"></i>
+                            <h3>Profile</h3>
+                        </a>
+                    </li>
+                </ul>
             </div>
         </div>
     </nav>
@@ -177,12 +218,14 @@
             <div class="container-fluid">
 
                 <!-- <a class="h4 mt-3 text-white text-uppercase d-none d-lg-inline-block" href="../index.html">Venue</a> -->
-                 <!-- <h1 style="color: white; font-family: Georgia, 'Times New Roman', Times, serif; font-weight: lighter; position: relative; top: 10px;">Catering</h1> -->
+                <h1
+                    style="color: white; font-family: Georgia, 'Times New Roman', Times, serif; font-weight: lighter; position: relative; top: 10px;">
+                    Category</h1>
 
                 <form class="navbar-search navbar-search-dark form-inline mr-3 d-none d-md-flex ml-auto">
                     <div class="form-group mb-0">
                         <div class="input-group input-group-alternative"
-                            style="border: 2px solid white; position: relative; top: 5px;">
+                            style="border: 2px solid white; position: relative; top: 2px;">
                             <div class="input-group-prepend">
                                 <span class="input-group-text input-group-text-sm"><i class="fas fa-search"></i></span>
                             </div>
@@ -239,26 +282,81 @@
 
         <div class="header bg-gradient-primary pb-6 pt-5 pt-md-3"></div>
 
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="#">Home</a></li>
+                <li class="breadcrumb-item"><a href="#">Category</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Service</li>
+                <li class="ml-auto"><a href="..//examples/category_add.html" class="btn btn-danger btn-sm ">Entry</a>
+                </li>
+            </ol>
+        </nav>
+
+        <div class="container-fluid mt-4">
+            <div class="card shadow">
+
+                <!-- Card Header -->
+                <div class=" bg-primary text-white d-flex justify-content-between align-items-center flex-wrap">
+                    <h4 class="mb-0 text-white"
+                        style="font-size: 20px; font-family: Georgia, 'Times New Roman', Times, serif;">Category</h4>
+
+                </div>
+
+                <!-- Search Form -->
+                <div class="card-body border-bottom">
+                    <form class="row">
+                        <div class="col-md-4">
+                            <input type="text" class="form-control" placeholder="Search by Category Name">
+                        </div>
+                        <div class="col-md-4">
+                            <input type="text" class="form-control" placeholder="Category_ID">
+                        </div>
+                        <!-- <div class="col-md-3">
+                                <input type="text" class="form-control" placeholder="Venue ID">
+                            </div> -->
+                        <div class="col-md-2 mb-2 d-flex justify-content-end">
+                            <div class="d-flex w-100" style="max-width: 30px;">
+                                <!-- Search Button -->
+                                <button type="submit" class="btn btn-warning flex-fill mr-3">
+                                    <i class="fa-solid fa-magnifying-glass mr-1"></i> Search
+                                </button>
+
+                                <!-- Reset Button -->
+                                <button type="reset" class="btn btn-success flex-fill">
+                                    <i class="fa-solid fa-trash-can-arrow-up mr-1"></i> Reset
+                                </button>
+                            </div>
+                        </div>
+
+                    </form>
+                </div>
+
+
+            </div>
+        </div>
+
+
         <!-- Page content -->
         <div class="container-fluid mt-4">
             <div class="card shadow">
 
-                <div
-                    class="card-header bg-primary text-white d-flex justify-content-between align-items-center flex-wrap">
-                    <h4 class="mb-0 text-white" style="font-size: 18px;">Add </h4>
-                    <a href="..//examples/catering-add.html" class="btn btn-danger mt-2 mt-md-0">Add</a>
+                <div class=" bg-primary text-white d-flex justify-content-between align-items-center flex-wrap">
+                    <h4 class="mb-0 text-white"
+                        style="font-size: 20px; font-family: Georgia, 'Times New Roman', Times, serif;">Category Lists
+                    </h4>
+                    <!-- <a href="..//examples/category_add.html" class="btn btn-danger mt-2 mt-md-0">Add</a> -->
                 </div>
 
                 <div class="card-body p-0">
-                    <table class="table table-striped table-hover table-bordered mb-0">
-                        <thead class="thead-light">
-                            <tr class="text-right">
-                                <th scope="col">#</th>
-                                <th scope="col">Event_Name</th>
-                                <th scope="col">Catering_Id</th>
-                                <th scope="col">Catering_Name</th>
-                                <th scope="col">Food</th>
-                                <th scope="col" class="text-center">Actions</th>
+                    <table class="table  table-hover table-bordered mb-0">
+                        <thead class="bg-gradient-success">
+                            <tr class="text-right" style="font-size:20px;">
+                                <th scope="col" style="font-size: 11px; color: white;">#</th>
+                                <th scope="col" style="font-size: 11px; color: white;">Category_Id</th>
+                                <th scope="col" style="font-size: 11px; color: white;">Category_Name</th>
+                                <th scope="col" style="font-size: 11px; color: white;">Description</th>
+                                <th scope="col" style="font-size: 11px; color: white;">Date</th>
+                                <th scope="col" style="font-size: 11px; color: white;" class="text-center">Actions</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -300,6 +398,7 @@
                 </div>
             </div>
         </div>
+
         <!--   Core   -->
         <script src="../assets/js/plugins/jquery/dist/jquery.min.js"></script>
         <script src="../assets/js/plugins/bootstrap/dist/js/bootstrap.bundle.min.js"></script>

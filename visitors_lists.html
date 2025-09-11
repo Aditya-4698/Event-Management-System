@@ -98,9 +98,9 @@
                     </div>
                 </li>
             </ul>
-            <!-- Collapse -->
+
             <div class="collapse navbar-collapse" id="sidenav-collapse-main">
-                <!-- Collapse header -->
+
                 <div class="navbar-collapse-header d-md-none">
                     <div class="row">
                         <div class="col-6 collapse-brand">
@@ -118,7 +118,6 @@
                         </div>
                     </div>
                 </div>
-                <!-- Form -->
                 <form class="mt-4 mb-3 d-md-none">
                     <div class="input-group input-group-rounded input-group-merge">
                         <input type="search" class="form-control form-control-rounded form-control-prepended"
@@ -130,7 +129,6 @@
                         </div>
                     </div>
                 </form>
-                <!-- Navigation -->
                 <ul class="navbar-nav">
           <li class="nav-item  active ">
             <a class="nav-link " href="../index.html">
@@ -141,6 +139,26 @@
             <a class="nav-link " href="../examples/venue-lists.html">
               <i class="ni ni-planet text-blue"></i><h3>Venue</h3>
             </a>
+            <li class="nav-item">
+              <a class="nav-link" href="../examples/category-list.html">
+                <i class="ni ni-circle-08 text-pink"></i> <h3>Category</h3>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " href="../examples/services-add.html">
+                <i class="ni ni-bullet-list-67 text-red"></i> <h3>Services</h3>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " href="../examples/services-add.html">
+                <i class="ni ni-bullet-list-67 text-red"></i> <h3>Visitors</h3>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " href="../examples/services-add.html">
+                <i class="ni ni-bullet-list-67 text-red"></i> <h3>Customers</h3>
+              </a>
+            </li>
           </li>
           <li class="nav-item">
             <a class="nav-link " href="../examples/Event-list.html">
@@ -148,51 +166,61 @@
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link " href="../examples/services-add.html">
-              <i class="ni ni-bullet-list-67 text-red"></i> <h3>Services</h3>
+            <a class="nav-link " href="../examples/Event-list.html">
+              <i class="ni ni-pin-3 text-orange"></i><h3> Event_Service</h3>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="../examples/Event-list.html">
+              <i class="ni ni-pin-3 text-orange"></i><h3> Payment</h3>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="../examples/Event-list.html">
+              <i class="ni ni-pin-3 text-orange"></i><h3> Feedback</h3>
             </a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="../examples/login.html">
-              <i class="ni ni-key-25 text-info"></i> <h3>Login</h3>
+              <i class="ni ni-key-25 text-info"></i> <h3>Logout</h3>
             </a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="../examples/register.html">
-              <i class="ni ni-circle-08 text-pink"></i> <h3>Register</h3>
-            </a>
-          </li>
+          
           <li class="nav-item">
             <a class="nav-link  active " href="../examples/profile.html">
               <i class="ni ni-single-02 text-yellow"></i> <h3>Profile</h3>
             </a>
           </li>
         </ul>
-                <!-- Divider -->
-
             </div>
         </div>
     </nav>
+
+
     <div class="main-content">
-        <!-- Navbar -->
+
         <nav class="navbar navbar-top navbar-expand-md navbar-dark" id="navbar-main">
             <div class="container-fluid">
-                <!-- Brand -->
-                <!-- <a class="h4 mb-0 text-white text-uppercase d-none d-lg-inline-block" href="../index.html">Catering</a> -->
-                 <h1 style="color: white; font-family: Georgia, 'Times New Roman', Times, serif; font-weight: lighter; position: relative; top: 10px;">Catering</h1>
-                <!-- Form -->
-                <form class="navbar-search navbar-search-dark form-inline mr-3 d-none d-md-flex ml-lg-auto">
+
+                <!-- <a class="h4 mt-3 text-white text-uppercase d-none d-lg-inline-block" href="../index.html">Venue</a> -->
+                <h1
+                    style="color: white; font-family: Georgia, 'Times New Roman', Times, serif; font-weight: lighter;position: relative; top: 15px;">
+                    Visitor</h1>
+
+                <form class="navbar-search navbar-search-dark form-inline mr-3 d-none d-md-flex ml-auto">
                     <div class="form-group mb-0">
-                        <div class="input-group input-group-alternative">
+                        <div class="input-group input-group-alternative"
+                            style="border: 2px solid white; position: relative; top: 2px;">
                             <div class="input-group-prepend">
-                                <span class="input-group-text"><i class="fas fa-search"></i></span>
+                                <span class="input-group-text input-group-text-sm"><i class="fas fa-search"></i></span>
                             </div>
-                            <input class="form-control" placeholder="Search" type="text">
+                            <input class="form-control form-control-sm" placeholder="Search" type="text"
+                                style="color: white; ">
                         </div>
                     </div>
                 </form>
-                <!-- User -->
-               <ul class="navbar-nav align-items-center d-none d-md-flex">
+
+                <ul class="navbar-nav align-items-center d-none d-md-flex">
                     <li class="nav-item dropdown">
                         <a class="nav-link pr-0" href="#" role="button" data-toggle="dropdown" aria-haspopup="true"
                             aria-expanded="false">
@@ -235,93 +263,119 @@
                 </ul>
             </div>
         </nav>
-        <!-- End Navbar -->
-        <!-- Header -->
-        <div class="header bg-gradient-primary pb-3 pt-5 pt-md-6">
-            <div class="container-fluid">
-                <div class="header-body">
-                    <!-- Card stats -->
-                </div>
-            </div>
-        </div>
-        <div class="container-fluid mt--10">
-            <!-- Card Wrapper -->
-            <div class="card shadow" style="margin-top: 30px;">
-                <!-- Card Header -->
-                <div class="card-header bg-primary text-white d-flex justify-content-between align-items-center flex-wrap">
-          <h4 class="mb-0 text-white" style="font-size: 18px;">Manage Catering</h4>
-          <button type="button" class="btn btn-danger mt-2 mt-md-0">Lists</button>
-        </div>
-                <!-- Card Body -->
-                <div class="card-body">
-                    <form class="needs-validation" novalidate>
-                        <div class="form-row">
-                            <!-- Event Name -->
-                            <div class="col-md-6 mb-3">
-                                <label for="eventName">Event Name</label>
-                                <input type="text" class="form-control" id="eventName" placeholder="Enter Event Name"
-                                    required>
-                                <div class="invalid-feedback">
-                                    Please enter a valid event name.
-                                </div>
-                            </div>
 
-                            <!-- Service ID -->
-                            <div class="col-md-6 mb-3">
-                                <label for="serviceId">Catering ID</label>
-                                <input type="text" class="form-control" id="serviceId" placeholder="Enter Service ID"
-                                    required>
-                                <div class="invalid-feedback">
-                                    Please enter a valid service ID.
-                                </div>
-                            </div>
 
-                            <!-- Food ID -->
+        <div class="header bg-gradient-primary pb-6 pt-5 pt-md-3"></div>
+
+        <div class="container-fluid mt-4">
+                <div class="card shadow">
+
+                    <!-- Card Header -->
+                    <div
+                        class="card-header bg-primary text-white d-flex justify-content-between align-items-center flex-wrap">
+                        <h4 class="mb-0 text-white" style="font-size: 18px;">Visitors</h4>
+
+                    </div>
+
+                    <!-- Search Form -->
+                    <div class="card-body border-bottom">
+                        <form class="row">
                             
-                        </div>
-
-                        <div class="form-row">
-                            <!-- Food Name -->
-                            <div class="col-md-6 mb-3">
-                                <label for="foodName">Catering Name</label>
-                                <input type="text" class="form-control" id="foodName" placeholder="Enter Food Name">
+                            <div class="col-md-3">
+                                <input type="text" class="form-control" placeholder="Name">
+                            </div>
+                            <div class="col-md-3">
+                                <input type="text" class="form-control" placeholder="Purpose">
+                            </div>
+                            <div class="col-md-2 d-flex">
+                                <button type="submit" class="btn btn-warning ">Search</button>
+                                <button type="reset" class="btn btn-success">Reset</button>
                             </div>
 
-                            <!-- Cost -->
-                            <div class="col-md-6 mb-3">
-                                <label for="decoration">Food</label>
-                                <select class="custom-select" id="decoration" required>
-                                    <option selected disabled value="">Choose...</option>
-                                    <option>Available</option>
-                                    <option>Not Available</option>
-                                </select>
-                            </div>
-                        </div>
+                        </form>
+                    </div>
 
-                        <!-- Submit Button -->
-                        <div class="text-center">
-                            <button type="submit" class="btn btn-success px-4">Update</button>
-                            <button type="submit" class="btn btn-danger px-4">Refresh</button>
-                        </div>
-                    </form>
+
+                </div>
+            </div>
+
+        <!-- Page content -->
+        <div class="container-fluid mt-4">
+            <div class="card shadow">
+
+                <div
+                    class="card-header bg-primary text-white d-flex justify-content-between align-items-center flex-wrap">
+                    <h4 class="mb-0 text-white" style="font-size: 18px;">Visitors Lists</h4>
+                    <a href="..//examples/visitors_add.html" class="btn btn-danger mt-2 mt-md-0">Add</a>
+                </div>
+
+                <div class="card-body p-0">
+                    <table class="table table-striped table-hover table-bordered mb-0">
+                        <thead class="thead-light">
+                            <tr class="text-right">
+                                <th scope="col">#</th>
+                                <th scope="col">Visitor Id</th>
+                                <th scope="col">Name</th>
+                                <th scope="col">Address</th>
+                                <th scope="col">Purpose</th>
+                                <th scope="col" class="text-center">Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="text-right">
+                                <th scope="row">1</th>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td class="text-center">
+                                    <input type="button" value="Update" class="btn btn-warning btn-sm mx-1">
+                                    <input type="button" value="Delete" class="btn btn-danger btn-sm">
+                                </td>
+                            </tr>
+                            <tr class="text-right">
+                                <th scope="row">2</th>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td class="text-center">
+                                    <input type="button" value="Update" class="btn btn-warning btn-sm mx-1">
+                                    <input type="button" value="Delete" class="btn btn-danger btn-sm">
+                                </td>
+                            </tr>
+                            <tr class="text-right">
+                                <th scope="row">3</th>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td class="text-center">
+                                    <input type="button" value="Update" class="btn btn-warning btn-sm mx-1">
+                                    <input type="button" value="Delete" class="btn btn-danger btn-sm">
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
             </div>
         </div>
-    </div>
-    <!--   Core   -->
-    <script src="../assets/js/plugins/jquery/dist/jquery.min.js"></script>
-    <script src="../assets/js/plugins/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <!--   Optional JS   -->
-    <!--   Argon JS   -->
-    <script src="../assets/js/argon-dashboard.min.js?v=1.1.2"></script>
-    <script src="https://cdn.trackjs.com/agent/v3/latest/t.js"></script>
-    <script>
-        window.TrackJS &&
-            TrackJS.install({
-                token: "ee6fab19c5a04ac1a32a645abde4613a",
-                application: "argon-dashboard-free"
-            });
-    </script>
+
+        <!--   Core   -->
+        <script src="../assets/js/plugins/jquery/dist/jquery.min.js"></script>
+        <script src="../assets/js/plugins/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+        <!--   Optional JS   -->
+        <script src="../assets/js/plugins/clipboard/dist/clipboard.min.js"></script>
+        <!--   Argon JS   -->
+        <script src="../assets/js/argon-dashboard.min.js?v=1.1.2"></script>
+        <script src="https://cdn.trackjs.com/agent/v3/latest/t.js"></script>
+        <script>
+            window.TrackJS &&
+                TrackJS.install({
+                    token: "ee6fab19c5a04ac1a32a645abde4613a",
+                    application: "argon-dashboard-free"
+                });
+        </script>
 </body>
 
 </html>

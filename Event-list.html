@@ -130,42 +130,80 @@
                     </div>
                 </form>
                 <ul class="navbar-nav">
-          <li class="nav-item  active ">
-            <a class="nav-link " href="../index.html">
-              <i class="ni ni-tv-2 text-primary"></i> <h2>Dashboard</h2>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link " href="../examples/venue-lists.html">
-              <i class="ni ni-planet text-blue"></i><h3>Venue</h3>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link " href="../examples/Event-list.html">
-              <i class="ni ni-pin-3 text-orange"></i><h3> Events</h3>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link " href="../examples/services-add.html">
-              <i class="ni ni-bullet-list-67 text-red"></i> <h3>Services</h3>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="../examples/login.html">
-              <i class="ni ni-key-25 text-info"></i> <h3>Login</h3>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="../examples/register.html">
-              <i class="ni ni-circle-08 text-pink"></i> <h3>Register</h3>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link  active " href="../examples/profile.html">
-              <i class="ni ni-single-02 text-yellow"></i> <h3>Profile</h3>
-            </a>
-          </li>
-        </ul>
+                    <li class="nav-item  active ">
+                        <a class="nav-link " href="../index.html">
+                            <i class="ni ni-tv-2 text-primary"></i>
+                            <h2>Dashboard</h2>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="../examples/venue-lists.html">
+                            <i class="ni ni-planet text-blue"></i>
+                            <h3>Venue</h3>
+                        </a>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../examples/category-list.html">
+                            <i class="ni ni-circle-08 text-pink"></i>
+                            <h3>Category</h3>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="../examples/services-add.html">
+                            <i class="ni ni-bullet-list-67 text-red"></i>
+                            <h3>Services</h3>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="../examples/services-add.html">
+                            <i class="ni ni-bullet-list-67 text-red"></i>
+                            <h3>Visitors</h3>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="../examples/services-add.html">
+                            <i class="ni ni-bullet-list-67 text-red"></i>
+                            <h3>Customers</h3>
+                        </a>
+                    </li>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="../examples/Event-list.html">
+                            <i class="ni ni-pin-3 text-orange"></i>
+                            <h3> Events</h3>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="../examples/Event-list.html">
+                            <i class="ni ni-pin-3 text-orange"></i>
+                            <h3> Event_Service</h3>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="../examples/Event-list.html">
+                            <i class="ni ni-pin-3 text-orange"></i>
+                            <h3> Payment</h3>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="../examples/Event-list.html">
+                            <i class="ni ni-pin-3 text-orange"></i>
+                            <h3> Feedback</h3>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../examples/login.html">
+                            <i class="ni ni-key-25 text-info"></i>
+                            <h3>Logout</h3>
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link  active " href="../examples/profile.html">
+                            <i class="ni ni-single-02 text-yellow"></i>
+                            <h3>Profile</h3>
+                        </a>
+                    </li>
+                </ul>
             </div>
         </div>
     </nav>
@@ -177,9 +215,9 @@
             <div class="container-fluid">
 
                 <!-- <a class="h4 mt-3 text-white text-uppercase d-none d-lg-inline-block" href="../index.html">Venue</a> -->
-                <!-- <h1
+                <h1
                     style="color: white; font-family: Georgia, 'Times New Roman', Times, serif; font-weight: lighter;position: relative; top: 15px;">
-                    Venue</h1> -->
+                    Event</h1>
 
                 <form class="navbar-search navbar-search-dark form-inline mr-3 d-none d-md-flex ml-auto">
                     <div class="form-group mb-0">
@@ -241,31 +279,90 @@
 
         <div class="header bg-gradient-primary pb-6 pt-5 pt-md-3"></div>
 
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="#">Home</a></li>
+                <li class="breadcrumb-item"><a href="#">Event</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Service</li>
+                <li class="ml-auto"><a href="..//examples/Events-add.html" class="btn btn-danger btn-sm ">Entry</a>
+                </li>
+            </ol>
+        </nav>
+
+        <div class="container-fluid mt-4">
+            <div class="card shadow">
+
+                <!-- Card Header -->
+                <div
+                    class=" bg-primary text-white d-flex justify-content-between align-items-center flex-wrap">
+                    <h4 class="mb-0 text-white" style="font-size: 18px;">Event</h4>
+
+                </div>
+
+                <!-- Search Form -->
+                <div class="card-body border-bottom">
+                    <form class="row">
+
+                        <div class="col-md-4">
+                            <input type="text" class="form-control" placeholder="Event ID">
+                        </div>
+                        <div class="col-md-4">
+                            <input type="text" class="form-control" placeholder="Venue ID">
+                        </div>
+                        <div class="col-2 md-2 mb-2 d-flex justify-content-end">
+                            <div class="d-flex w-120" style="max-width: 0px;">
+                                <!-- Search Button -->
+                                <button type="submit" class="btn btn-warning flex-fill mr-3">
+                                    <i class="fa-solid fa-magnifying-glass mr-1"></i> Search
+                                </button>
+
+                                <!-- Reset Button -->
+                                <button type="reset" class="btn btn-success flex-fill">
+                                    <i class="fa-solid fa-trash-can-arrow-up mr-1"></i> Reset
+                                </button>
+                            </div>
+                        </div>
+
+                    </form>
+                </div>
+
+
+            </div>
+        </div>
+
         <!-- Page content -->
         <div class="container-fluid mt-4">
             <div class="card shadow">
 
                 <div
-                    class="card-header bg-primary text-white d-flex justify-content-between align-items-center flex-wrap">
+                    class=" bg-primary text-white d-flex justify-content-between align-items-center flex-wrap">
                     <h4 class="mb-0 text-white" style="font-size: 18px;">Events Lists</h4>
-                    <a href="..//examples/Events-add.html" class="btn btn-danger mt-2 mt-md-0">Add</a>
+                    <!-- <a href="..//examples/Events-add.html" class="btn btn-danger mt-2 mt-md-0">Add</a> -->
                 </div>
 
-                <div class="card-body p-0">
-                    <table class="table table-striped table-hover table-bordered mb-0">
-                        <thead class="thead-light">
+                <div class="card-body table-responsive p-0">
+                    <table class="table table-hover table-bordered mb-0">
+                        <thead class="bg-gradient-success">
                             <tr class="text-right">
-                                <th scope="col">#</th>
-                                <th scope="col">Event_Id</th>
-                                <th scope="col">Event_Name</th>
-                                <th scope="col">Services</th>
-                                <th scope="col">Cost</th>
-                                <th scope="col" class="text-center">Actions</th>
+                                <th scope="col" style="font-size: 11px; color: white;">#</th>
+                                <th scope="col" style="font-size: 11px; color: white;">Event_Id</th>
+                                <th scope="col" style="font-size: 11px; color: white;">Event_Name</th>
+                                <th scope="col" style="font-size: 11px; color: white;">Venue_Name</th>
+                                <th scope="col" style="font-size: 11px; color: white;">Start_date</th>
+                                <th scope="col" style="font-size: 11px; color: white;">End_date</th>
+                                <th scope="col" style="font-size: 11px; color: white;">Services</th>
+                                <th scope="col" style="font-size: 11px; color: white;">Participant</th>
+                                <th scope="col" style="font-size: 11px; color: white;">Cost</th>
+                                <th scope="col" style="font-size: 11px; color: white;" class="text-center">Actions</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr class="text-right">
                                 <th scope="row">1</th>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
                                 <td></td>
                                 <td></td>
                                 <td></td>
@@ -281,6 +378,10 @@
                                 <td></td>
                                 <td></td>
                                 <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
                                 <td class="text-center">
                                     <input type="button" value="Update" class="btn btn-warning btn-sm mx-1">
                                     <input type="button" value="Delete" class="btn btn-danger btn-sm">
@@ -288,6 +389,10 @@
                             </tr>
                             <tr class="text-right">
                                 <th scope="row">3</th>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
                                 <td></td>
                                 <td></td>
                                 <td></td>

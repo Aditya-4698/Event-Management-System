@@ -201,44 +201,63 @@
         <ul class="navbar-nav">
           <li class="nav-item  active ">
             <a class="nav-link " href="../index.html">
-              <i class="ni ni-tv-2 text-primary"></i>
-              <h2>Dashboard</h2>
+              <i class="ni ni-tv-2 text-primary"></i> <h2>Dashboard</h2>
             </a>
           </li>
           <li class="nav-item">
             <a class="nav-link " href="../examples/venue-lists.html">
-              <i class="ni ni-planet text-blue"></i>
-              <h3>Venue</h3>
+              <i class="ni ni-planet text-blue"></i><h3>Venue</h3>
+            </a>
+            <li class="nav-item">
+              <a class="nav-link" href="../examples/category-list.html">
+                <i class="ni ni-circle-08 text-pink"></i> <h3>Category</h3>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " href="../examples/services-add.html">
+                <i class="ni ni-bullet-list-67 text-red"></i> <h3>Services</h3>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " href="../examples/services-add.html">
+                <i class="ni ni-bullet-list-67 text-red"></i> <h3>Visitors</h3>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " href="../examples/services-add.html">
+                <i class="ni ni-bullet-list-67 text-red"></i> <h3>Customers</h3>
+              </a>
+            </li>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="../examples/Event-list.html">
+              <i class="ni ni-pin-3 text-orange"></i><h3> Events</h3>
             </a>
           </li>
           <li class="nav-item">
             <a class="nav-link " href="../examples/Event-list.html">
-              <i class="ni ni-pin-3 text-orange"></i>
-              <h3> Events</h3>
+              <i class="ni ni-pin-3 text-orange"></i><h3> Event_Service</h3>
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link " href="../examples/services-add.html">
-              <i class="ni ni-bullet-list-67 text-red"></i>
-              <h3>Services</h3>
+            <a class="nav-link " href="../examples/Event-list.html">
+              <i class="ni ni-pin-3 text-orange"></i><h3> Payment</h3>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="../examples/Event-list.html">
+              <i class="ni ni-pin-3 text-orange"></i><h3> Feedback</h3>
             </a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="../examples/login.html">
-              <i class="ni ni-key-25 text-info"></i>
-              <h3>Login</h3>
+              <i class="ni ni-key-25 text-info"></i> <h3>Logout</h3>
             </a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="../examples/register.html">
-              <i class="ni ni-circle-08 text-pink"></i>
-              <h3>Register</h3>
-            </a>
-          </li>
+          
           <li class="nav-item">
             <a class="nav-link  active " href="../examples/profile.html">
-              <i class="ni ni-single-02 text-yellow"></i>
-              <h3>Profile</h3>
+              <i class="ni ni-single-02 text-yellow"></i> <h3>Profile</h3>
             </a>
           </li>
         </ul>
@@ -428,86 +447,125 @@
     </div>
     <!-- Page content -->
     <div class="container-fluid mt--10">
+      <!-- Card Wrapper -->
       <div class="card shadow">
-        <!-- Card Header -->
         <div class="card-header bg-primary text-white d-flex justify-content-between align-items-center flex-wrap">
           <h4 class="mb-0 text-white" style="font-size: 18px;">Update Event</h4>
-          <a href="..//examples/Event-list.html" class="btn btn-danger mt-2 mt-md-0">Lists</a>
+          <a href="..//examples/Event-list.html" class="btn btn-danger mt-2 mt-md-0">Go back</a>
         </div>
-
-        <!-- Card Body -->
         <div class="card-body">
-          <!-- Event Form -->
           <form class="needs-validation" novalidate>
-            <div class="form-row">
+            <div class="form-row mt-3">
               <div class="col-md-6 mb-3">
-                <label for="validationCustom01">Event ID</label>
-                <input type="text" class="form-control" id="validationCustom01" placeholder="Enter Event ID" required>
+                <label for="validationCustom01">Event Id</label>
+                <input type="text" class="form-control" id="validationCustom01" placeholder="Enter Event Id" required>
+                <div class="invalid-feedback">
+                  Please provide a valid Event Id.
+                </div>
               </div>
               <div class="col-md-6 mb-3">
                 <label for="validationCustom02">Event Name</label>
                 <input type="text" class="form-control" id="validationCustom02" placeholder="Enter Event Name" required>
+                <div class="invalid-feedback">
+                  Please provide a valid Event Name.
+                </div>
               </div>
             </div>
+
+            <div class="form-row mt-3">
+              <div class="col-md-6 mb-3">
+                <label for="validationCustom01">Customer Id</label>
+                <input type="text" class="form-control" id="validationCustom01" placeholder="Enter Event Id" required>
+                <div class="invalid-feedback">
+                  Please provide a valid Event Id.
+                </div>
+              </div>
+              <div class="col-md-6 mb-3">
+                <label for="validationCustom02">Venue Id</label>
+                <input type="text" class="form-control" id="validationCustom02" placeholder="Enter Event Name" required>
+                <div class="invalid-feedback">
+                  Please provide a valid Event Name.
+                </div>
+              </div>
+            </div>
+
+            <div class="form-row mt-3">
+              <div class="col-md-6 mb-3">
+                <label for="validationCustom01">Service Id</label>
+                <input type="text" class="form-control" id="validationCustom01" placeholder="Enter Event Id" required>
+                <div class="invalid-feedback">
+                  Please provide a valid Event Id.
+                </div>
+              </div>
+              <div class="col-md-3 mb-3">
+                <label for="validationCustom02">Event date</label>
+                <input type="text" class="form-control" id="validationCustom02" placeholder="Enter Event Name" required>
+                <div class="invalid-feedback">
+                  Please provide a valid Event Name.
+                </div>
+              </div>
+              <div class="col-md-3 mb-3">
+                <label for="validationCustom02">Start date</label>
+                <input type="text" class="form-control" id="validationCustom02" placeholder="Enter Event Name" required>
+                <div class="invalid-feedback">
+                  Please provide a valid Event Name.
+                </div>
+              </div>
+            </div>
+
+            <div class="form-row mt-3">
+              <div class="col-md-3 mb-3">
+                <label for="validationCustom01">Start time</label>
+                <input type="text" class="form-control" id="validationCustom01" placeholder="Enter Event Id" required>
+                <div class="invalid-feedback">
+                  Please provide a valid Event Id.
+                </div>
+              </div>
+              <div class="col-md-3 mb-3">
+                <label for="validationCustom02">End date</label>
+                <input type="text" class="form-control" id="validationCustom02" placeholder="Enter Event Name" required>
+                <div class="invalid-feedback">
+                  Please provide a valid Event Name.
+                </div>
+              </div>
+              <div class="col-md-3 mb-3">
+                <label for="validationCustom02">End time</label>
+                <input type="text" class="form-control" id="validationCustom02" placeholder="Enter Event Name" required>
+                <div class="invalid-feedback">
+                  Please provide a valid Event Name.
+                </div>
+              </div>
+              <div class="col-md-3 mb-3">
+                <label for="validationCustom02">Max Participant</label>
+                <input type="text" class="form-control" id="validationCustom02" placeholder="Enter Event Name" required>
+                <div class="invalid-feedback">
+                  Please provide a valid Event Name.
+                </div>
+              </div>
+            </div>
+
             <div class="form-row">
               <div class="col-md-9 mb-3">
-                <label for="validationCustom03">Services</label>
+                <label for="validationCustom03">Description</label>
                 <input type="text" class="form-control" id="validationCustom03" placeholder="Enter Services" required>
+                <div class="invalid-feedback">
+                  Please provide services information.
+                </div>
               </div>
               <div class="col-md-3 mb-3">
                 <label for="validationCustom05">Cost</label>
-                <input type="text" class="form-control" id="validationCustom05" placeholder="Rs.....">
+                <input type="text" class="form-control" id="validationCustom05" placeholder="Rs....." required>
+                <div class="invalid-feedback">
+                  Please provide a valid cost.
+                </div>
               </div>
             </div>
 
             <div class="text-center">
-              <button type="submit" class="btn btn-success px-4">Update</button>
+              <button type="submit" class="btn btn-success px-4">Submit</button>
               <button type="submit" class="btn btn-danger px-4">Refresh</button>
             </div>
           </form>
-
-          <!-- Divider -->
-          <!-- <hr> -->
-
-          <!-- Event Table -->
-          <!-- <div class="table-responsive">
-        <table class="table table-striped table-hover table-bordered mb-0">
-          <thead class="thead-light">
-            <tr class="text-center">
-              <th>#</th>
-              <th>Event ID</th>
-              <th>Event Name</th>
-              <th>Services</th>
-              <th>Cost</th>
-              <th>Actions</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr class="text-center">
-              <td>1</td>
-              <td>E001</td>
-              <td>Wedding</td>
-              <td>Catering, Decoration</td>
-              <td>50000</td>
-              <td>
-                <button class="btn btn-warning btn-sm mx-1">Edit</button>
-                <button class="btn btn-danger btn-sm">Delete</button>
-              </td>
-            </tr>
-            <tr class="text-center">
-              <td>2</td>
-              <td>E002</td>
-              <td>Birthday Party</td>
-              <td>Decoration</td>
-              <td>20000</td>
-              <td>
-                <button class="btn btn-warning btn-sm mx-1">Edit</button>
-                <button class="btn btn-danger btn-sm">Delete</button>
-              </td>
-            </tr>
-          </tbody>
-        </table>
-      </div> -->
         </div>
       </div>
     </div>

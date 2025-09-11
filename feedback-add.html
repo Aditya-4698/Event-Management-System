@@ -143,11 +143,10 @@
                             <i class="ni ni-planet text-blue"></i>
                             <h3>Venue</h3>
                         </a>
-                    </li>
                     <li class="nav-item">
-                        <a class="nav-link " href="../examples/Event-list.html">
-                            <i class="ni ni-pin-3 text-orange"></i>
-                            <h3> Events</h3>
+                        <a class="nav-link" href="../examples/category-list.html">
+                            <i class="ni ni-circle-08 text-pink"></i>
+                            <h3>Category</h3>
                         </a>
                     </li>
                     <li class="nav-item">
@@ -157,17 +156,49 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="../examples/login.html">
-                            <i class="ni ni-key-25 text-info"></i>
-                            <h3>Login</h3>
+                        <a class="nav-link " href="../examples/services-add.html">
+                            <i class="ni ni-bullet-list-67 text-red"></i>
+                            <h3>Visitors</h3>
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="../examples/register.html">
-                            <i class="ni ni-circle-08 text-pink"></i>
-                            <h3>Register</h3>
+                        <a class="nav-link " href="../examples/services-add.html">
+                            <i class="ni ni-bullet-list-67 text-red"></i>
+                            <h3>Customers</h3>
                         </a>
                     </li>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="../examples/Event-list.html">
+                            <i class="ni ni-pin-3 text-orange"></i>
+                            <h3> Events</h3>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="../examples/Event-list.html">
+                            <i class="ni ni-pin-3 text-orange"></i>
+                            <h3> Event_Service</h3>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="../examples/Event-list.html">
+                            <i class="ni ni-pin-3 text-orange"></i>
+                            <h3> Payment</h3>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="../examples/Event-list.html">
+                            <i class="ni ni-pin-3 text-orange"></i>
+                            <h3> Feedback</h3>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../examples/login.html">
+                            <i class="ni ni-key-25 text-info"></i>
+                            <h3>Logout</h3>
+                        </a>
+                    </li>
+
                     <li class="nav-item">
                         <a class="nav-link  active " href="../examples/profile.html">
                             <i class="ni ni-single-02 text-yellow"></i>
@@ -186,9 +217,9 @@
             <div class="container-fluid">
                 <!-- Brand -->
                 <!-- <a class="h4 mb-0 text-white text-uppercase d-none d-lg-inline-block" href="../index.html">Catering</a> -->
-                <!-- <h1
+                <h1
                     style="color: white; font-family: Georgia, 'Times New Roman', Times, serif; font-weight: lighter; position: relative; top: 10px;">
-                    Catering</h1>  -->
+                    Feedback</h1>
                 <!-- Form -->
                 <form class="navbar-search navbar-search-dark form-inline mr-3 d-none d-md-flex ml-lg-auto">
                     <div class="form-group mb-0">
@@ -259,17 +290,17 @@
                 <!-- Card Header -->
                 <div
                     class="card-header bg-primary text-white d-flex justify-content-between align-items-center flex-wrap">
-                    <h4 class="mb-0 text-white" style="font-size: 18px;">Manage Catering</h4>
-                    <a href="..//examples/catering-list.html" class="btn btn-danger mt-2 mt-md-0">Go back</a>
+                    <h4 class="mb-0 text-white" style="font-size: 18px;">Feedback</h4>
+                    <a href="..//examples/feedback-list.html" class="btn btn-danger mt-2 mt-md-0">Go back</a>
                 </div>
                 <!-- Card Body -->
                 <div class="card-body">
                     <form class="needs-validation" novalidate>
                         <div class="form-row">
                             <!-- Event Name -->
-                            <div class="col-md-6 mb-3">
-                                <label for="eventName">Event Name</label>
-                                <input type="text" class="form-control" id="eventName" placeholder="Enter Event Name"
+                            <div class="col-md-4 mb-3">
+                                <label for="eventName">Id</label>
+                                <input type="text" class="form-control" id="eventName" placeholder="Feedback ID"
                                     required>
                                 <div class="invalid-feedback">
                                     Please enter a valid event name.
@@ -277,9 +308,17 @@
                             </div>
 
                             <!-- Service ID -->
-                            <div class="col-md-6 mb-3">
-                                <label for="serviceId">Catering ID</label>
-                                <input type="text" class="form-control" id="serviceId" placeholder="Enter Service ID"
+                            <div class="col-md-4 mb-3">
+                                <label for="serviceId">Event ID</label>
+                                <input type="text" class="form-control" id="serviceId" placeholder="Enter Event ID"
+                                    required>
+                                <div class="invalid-feedback">
+                                    Please enter a valid service ID.
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-3">
+                                <label for="serviceId">Customer ID</label>
+                                <input type="text" class="form-control" id="serviceId" placeholder="Enter Customer ID"
                                     required>
                                 <div class="invalid-feedback">
                                     Please enter a valid service ID.
@@ -292,20 +331,37 @@
 
                         <div class="form-row">
                             <!-- Food Name -->
-                            <div class="col-md-6 mb-3">
-                                <label for="foodName">Catering Name</label>
-                                <input type="text" class="form-control" id="foodName" placeholder="Enter Food Name">
+                            <div class="col-md-2 mb-3">
+                                <label for="catering">Rating</label>
+                                <select class="custom-select" id="catering" required>
+                                    <option selected disabled value="">Rate...</option>
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5</option>
+                                </select>
                             </div>
-
-                            <!-- Cost -->
-                            <div class="col-md-6 mb-3">
-                                <label for="decoration">Food</label>
-                                <select class="custom-select" id="decoration" required>
+                            <div class="col-md-2 mb-3">
+                                <label for="catering">Date</label>
+                                <select class="custom-select" id="catering" required>
                                     <option selected disabled value="">Choose...</option>
                                     <option>Available</option>
                                     <option>Not Available</option>
                                 </select>
                             </div>
+
+                            <!-- Cost -->
+                            <div class="col-md-8 mb-3">
+                                <label for="serviceId">Comment</label>
+                                <input type="text" class="form-control" id="serviceId" placeholder="Share your feedback"
+                                    required>
+                                <div class="invalid-feedback">
+                                    Please enter a valid service ID.
+                                </div>
+                            </div>
+
+
                         </div>
 
                         <!-- Submit Button -->

@@ -139,6 +139,26 @@
             <a class="nav-link " href="../examples/venue-lists.html">
               <i class="ni ni-planet text-blue"></i><h3>Venue</h3>
             </a>
+            <li class="nav-item">
+              <a class="nav-link" href="../examples/category-list.html">
+                <i class="ni ni-circle-08 text-pink"></i> <h3>Category</h3>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " href="../examples/services-add.html">
+                <i class="ni ni-bullet-list-67 text-red"></i> <h3>Services</h3>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " href="../examples/services-add.html">
+                <i class="ni ni-bullet-list-67 text-red"></i> <h3>Visitors</h3>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " href="../examples/services-add.html">
+                <i class="ni ni-bullet-list-67 text-red"></i> <h3>Customers</h3>
+              </a>
+            </li>
           </li>
           <li class="nav-item">
             <a class="nav-link " href="../examples/Event-list.html">
@@ -146,20 +166,26 @@
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link " href="../examples/services-add.html">
-              <i class="ni ni-bullet-list-67 text-red"></i> <h3>Services</h3>
+            <a class="nav-link " href="../examples/Event-list.html">
+              <i class="ni ni-pin-3 text-orange"></i><h3> Event_Service</h3>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="../examples/Event-list.html">
+              <i class="ni ni-pin-3 text-orange"></i><h3> Payment</h3>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="../examples/Event-list.html">
+              <i class="ni ni-pin-3 text-orange"></i><h3> Feedback</h3>
             </a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="../examples/login.html">
-              <i class="ni ni-key-25 text-info"></i> <h3>Login</h3>
+              <i class="ni ni-key-25 text-info"></i> <h3>Logout</h3>
             </a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="../examples/register.html">
-              <i class="ni ni-circle-08 text-pink"></i> <h3>Register</h3>
-            </a>
-          </li>
+          
           <li class="nav-item">
             <a class="nav-link  active " href="../examples/profile.html">
               <i class="ni ni-single-02 text-yellow"></i> <h3>Profile</h3>
@@ -177,14 +203,12 @@
             <div class="container-fluid">
 
                 <!-- <a class="h4 mt-3 text-white text-uppercase d-none d-lg-inline-block" href="../index.html">Venue</a> -->
-                <!-- <h1
-                    style="color: white; font-family: Georgia, 'Times New Roman', Times, serif; font-weight: lighter; position: relative; top: 10px;">
-                    Decoration</h1> -->
+                 <h1 style="color: white; font-family: Georgia, 'Times New Roman', Times, serif; font-weight: lighter; position: relative; top: 10px;">Feedback</h1>
 
                 <form class="navbar-search navbar-search-dark form-inline mr-3 d-none d-md-flex ml-auto">
                     <div class="form-group mb-0">
                         <div class="input-group input-group-alternative"
-                            style="border: 2px solid white; position: relative; top: 2px;">
+                            style="border: 2px solid white; position: relative; top: 5px;">
                             <div class="input-group-prepend">
                                 <span class="input-group-text input-group-text-sm"><i class="fas fa-search"></i></span>
                             </div>
@@ -242,13 +266,13 @@
         <div class="header bg-gradient-primary pb-6 pt-5 pt-md-3"></div>
 
         <!-- Page content -->
-       <div class="container-fluid mt-4">
+        <div class="container-fluid mt-4">
             <div class="card shadow">
 
                 <div
                     class="card-header bg-primary text-white d-flex justify-content-between align-items-center flex-wrap">
-                    <h4 class="mb-0 text-white" style="font-size: 18px;">Decoration</h4>
-                    <a href="..//examples/decoration_add.html" class="btn btn-danger mt-2 mt-md-0">Add</a>
+                    <h4 class="mb-0 text-white" style="font-size: 18px;">Feedback </h4>
+                    <a href="..//examples/feedback-add.html" class="btn btn-danger mt-2 mt-md-0">Add</a>
                 </div>
 
                 <div class="card-body p-0">
@@ -256,10 +280,10 @@
                         <thead class="thead-light">
                             <tr class="text-right">
                                 <th scope="col">#</th>
-                                <th scope="col">Event_Id</th>
-                                <th scope="col">Venue_Id</th>
-                                <th scope="col">Decoration_Name</th>
-                                <th scope="col">Cost</th>
+                                <th scope="col">Event Id</th>
+                                <th scope="col">Customer Name</th>
+                                <th scope="col">Rating</th>
+                                <th scope="col">Feedback</th>
                                 <th scope="col" class="text-center">Actions</th>
                             </tr>
                         </thead>
@@ -302,7 +326,6 @@
                 </div>
             </div>
         </div>
-
         <!--   Core   -->
         <script src="../assets/js/plugins/jquery/dist/jquery.min.js"></script>
         <script src="../assets/js/plugins/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
