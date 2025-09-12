@@ -34,6 +34,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
         integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    
 </head>
 
 <body class="">
@@ -182,11 +184,11 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link " href="../examples/Event-list.html">
-                            <i class="ni ni-pin-3 text-orange"></i>
-                            <h3> Payment</h3>
-                        </a>
-                    </li>
+            <a class="nav-link " href="../examples/payment-list.html">
+              <i class="ni ni-pin-3 text-orange"></i>
+              <h3> payment</h3>
+            </a>
+          </li>
                     <li class="nav-item">
                         <a class="nav-link " href="../examples/Event-list.html">
                             <i class="ni ni-pin-3 text-orange"></i>
@@ -218,20 +220,20 @@
             <div class="container-fluid">
 
                 <!-- <a class="h4 mt-3 text-white text-uppercase d-none d-lg-inline-block" href="../index.html">Venue</a> -->
-                <h1
+                <!-- <h1
                     style="color: white; font-family: Georgia, 'Times New Roman', Times, serif; font-weight: lighter; position: relative; top: 10px;">
-                    Category</h1>
+                    Category</h1> -->
 
                 <form class="navbar-search navbar-search-dark form-inline mr-3 d-none d-md-flex ml-auto">
                     <div class="form-group mb-0">
-                        <div class="input-group input-group-alternative"
+                        <!-- <div class="input-group input-group-alternative"
                             style="border: 2px solid white; position: relative; top: 2px;">
                             <div class="input-group-prepend">
                                 <span class="input-group-text input-group-text-sm"><i class="fas fa-search"></i></span>
                             </div>
                             <input class="form-control form-control-sm" placeholder="Search" type="text"
                                 style="color: white; ">
-                        </div>
+                        </div> -->
                     </div>
                 </form>
 
@@ -282,55 +284,60 @@
 
         <div class="header bg-gradient-primary pb-6 pt-5 pt-md-3"></div>
 
-        <nav aria-label="breadcrumb">
-            <ol class="breadcrumb">
+        <nav aria-label="breadcrumb" class="pl-4">
+            <h1 class="pl-3">Category</h1>
+            <ol class="breadcrumb mt--4" style="background-color: transparent;">
                 <li class="breadcrumb-item"><a href="#">Home</a></li>
                 <li class="breadcrumb-item"><a href="#">Category</a></li>
                 <li class="breadcrumb-item active" aria-current="page">Service</li>
-                <li class="ml-auto"><a href="..//examples/category_add.html" class="btn btn-danger btn-sm ">Entry</a>
-                </li>
+                <!-- <li class="ml-auto"><a href="..//examples/category_add.html" class="btn btn-danger btn-sm ">Entry</a>
+                </li> -->
             </ol>
         </nav>
 
-        <div class="container-fluid mt-4">
+        <div class="container-fluid mt--3">
             <div class="card shadow">
 
                 <!-- Card Header -->
-                <div class=" bg-primary text-white d-flex justify-content-between align-items-center flex-wrap">
-                    <h4 class="mb-0 text-white"
+                <div class="header bg-primary text-white d-flex justify-content-between align-items-center flex-wrap">
+                    <h4 class="pt-2 pl-3 text-white"
                         style="font-size: 20px; font-family: Georgia, 'Times New Roman', Times, serif;">Category</h4>
-
+                    <a href="..//examples/category_add.html" class=" btn-warning btn-sm mr-2"
+                        style="border-radius: 0px; font-size: 13px;"><i class="bi bi-plus-lg pr-1"></i>Entry New</a>
                 </div>
 
                 <!-- Search Form -->
                 <div class="card-body border-bottom">
-                    <form class="row">
-                        <div class="col-md-4">
-                            <input type="text" class="form-control" placeholder="Search by Category Name">
-                        </div>
-                        <div class="col-md-4">
-                            <input type="text" class="form-control" placeholder="Category_ID">
-                        </div>
-                        <!-- <div class="col-md-3">
-                                <input type="text" class="form-control" placeholder="Venue ID">
-                            </div> -->
-                        <div class="col-md-4 mb-2 d-flex justify-content-end">
-                            <div class="d-flex flex-wrap w-100 justify-content-end" style="gap: 10px;">
-                                <!-- Search Button -->
-                                <button type="submit" class="btn btn-warning">
-                                    <i class="fa-solid fa-magnifying-glass mr-1"></i> Search
-                                </button>
+    <form class="row g-3">
+        <!-- Category Name -->
+        <div class="col-md-4">
+            <label for="categoryName" class="form-label fw-bold">Category Name</label>
+            <input type="text" id="categoryName" class="form-control" placeholder="Enter Category Name">
+        </div>
 
-                                <!-- Reset Button -->
-                                <button type="reset" class="btn btn-success">
-                                    <i class="fa-solid fa-trash-can-arrow-up mr-1"></i> Reset
-                                </button>
-                            </div>
-                        </div>
+        <!-- Category ID -->
+        <div class="col-md-4">
+            <label for="categoryId" class="form-label fw-bold">Category ID</label>
+            <input type="text" id="categoryId" class="form-control" placeholder="Enter Category ID">
+        </div>
 
+        <!-- Buttons -->
+        <div class="col-md-4 d-flex align-items-end justify-content-end">
+            <div class="d-flex flex-wrap w-100 justify-content-end" style="gap: 10px;">
+                <!-- Search Button -->
+                <button type="submit" class="btn btn-warning">
+                    <i class="bi bi-search"></i> Search
+                </button>
 
-                    </form>
-                </div>
+                <!-- Reset Button -->
+                <button type="reset" class="btn btn-success">
+                    <i class="bi bi-arrow-clockwise"></i> Refresh
+                </button>
+            </div>
+        </div>
+    </form>
+</div>
+
 
 
             </div>
@@ -341,17 +348,17 @@
         <div class="container-fluid mt-4">
             <div class="card shadow">
 
-                <div class=" bg-primary text-white d-flex justify-content-between align-items-center flex-wrap">
+                <!-- <div class=" bg-primary text-white d-flex justify-content-between align-items-center flex-wrap">
                     <h4 class="mb-0 text-white"
                         style="font-size: 20px; font-family: Georgia, 'Times New Roman', Times, serif;">Category Lists
                     </h4>
-                    <!-- <a href="..//examples/category_add.html" class="btn btn-danger mt-2 mt-md-0">Add</a> -->
-                </div>
+                    <a href="..//examples/category_add.html" class="btn btn-danger mt-2 mt-md-0">Add</a>
+                </div> -->
 
                 <div class="card-body p-0">
-                    <table class="table  table-hover table-bordered mb-0">
-                        <thead class="bg-gradient-success">
-                            <tr class="text-right" style="font-size:20px;">
+                    <table class="table  table-hover mb-0">
+                        <thead class="bg-dark">
+                            <tr class="text-right text-center" style="font-size:20px;">
                                 <th scope="col" style="font-size: 11px; color: white;">#</th>
                                 <th scope="col" style="font-size: 11px; color: white;">Category_Id</th>
                                 <th scope="col" style="font-size: 11px; color: white;">Category_Name</th>
@@ -367,9 +374,11 @@
                                 <td></td>
                                 <td></td>
                                 <td></td>
-                                <td class="text-center">
-                                    <input type="button" value="Update" class="btn btn-warning btn-sm mx-1">
-                                    <input type="button" value="Delete" class="btn btn-danger btn-sm">
+                                <td>
+                                    <button class="btn btn-success btn-sm mx-1"><i
+                                            class="bi bi-pencil-square pr-1"></i>Update</button>
+                                    <button class="btn btn-danger btn-sm"><i
+                                            class="bi bi-trash3-fill pr-1"></i>Delete</button>
                                 </td>
                             </tr>
                             <tr class="text-right">
@@ -378,9 +387,11 @@
                                 <td></td>
                                 <td></td>
                                 <td></td>
-                                <td class="text-center">
-                                    <input type="button" value="Update" class="btn btn-warning btn-sm mx-1">
-                                    <input type="button" value="Delete" class="btn btn-danger btn-sm">
+                                <td>
+                                    <button class="btn btn-success btn-sm mx-1"><i
+                                            class="bi bi-pencil-square pr-1"></i>Update</button>
+                                    <button class="btn btn-danger btn-sm"><i
+                                            class="bi bi-trash3-fill pr-1"></i>Delete</button>
                                 </td>
                             </tr>
                             <tr class="text-right">
@@ -389,10 +400,15 @@
                                 <td></td>
                                 <td></td>
                                 <td></td>
-                                <td class="text-center">
-                                    <input type="button" value="Update" class="btn btn-warning btn-sm mx-1">
-                                    <input type="button" value="Delete" class="btn btn-danger btn-sm">
+                                <td>
+                                    <a href="category-update.html" class="btn btn-success btn-sm mx-1">
+                                        <i class="bi bi-pencil-square pr-"></i> Update
+                                    </a>
+                                    <a href="delete-page.html" class="btn btn-danger btn-sm">
+                                        <i class="bi bi-trash3-fill pr-0"></i> Delete
+                                    </a>
                                 </td>
+
                             </tr>
                         </tbody>
                     </table>

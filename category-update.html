@@ -31,6 +31,7 @@
     <link href="../assets/js/plugins/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet" />
     <!-- CSS Files -->
     <link href="../assets/css/argon-dashboard.css?v=1.1.2" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
 </head>
 
 <body class="">
@@ -181,9 +182,9 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link " href="../examples/Event-list.html">
+                        <a class="nav-link " href="../examples/payment-list.html">
                             <i class="ni ni-pin-3 text-orange"></i>
-                            <h3> Payment</h3>
+                            <h3> payment</h3>
                         </a>
                     </li>
                     <li class="nav-item">
@@ -219,18 +220,18 @@
             <div class="container-fluid">
                 <!-- Brand -->
                 <!-- <a class="h4 mb-0 text-white text-uppercase d-none d-lg-inline-block" href="../index.html">Decoration</a> -->
-                <h1
+                <!-- <h1
                     style="color: white; font-family: Georgia, 'Times New Roman', Times, serif; font-weight: lighter; position: relative; top: 10px;">
-                    Category</h1>
+                    Category</h1> -->
                 <!-- Form -->
                 <form class="navbar-search navbar-search-dark form-inline mr-3 d-none d-md-flex ml-lg-auto">
                     <div class="form-group mb-0">
-                        <div class="input-group input-group-alternative">
-                            <div class="input-group-prepend">
-                                <span class="input-group-text"><i class="fas fa-search"></i></span>
-                            </div>
-                            <input class="form-control" placeholder="Search" type="text">
-                        </div>
+                        <!-- <div class="input-group input-group-alternative">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text"><i class="fas fa-search"></i></span>
+                                </div>
+                                <input class="form-control" placeholder="Search" type="text">
+                            </div> -->
                     </div>
                 </form>
                 <!-- User -->
@@ -243,7 +244,7 @@
                                     <img alt="Image placeholder" src="../assets/img/theme/team-4-800x800.jpg">
                                 </span>
                                 <div class="media-body ml-2 d-none d-lg-block">
-                                    <span class="mb-0 text-sm  font-weight-bold">Jessica Jones</span>
+                                    <span class="mb-0 text-sm  font-weight-bold">Aditya</span>
                                 </div>
                             </div>
                         </a>
@@ -286,74 +287,85 @@
                 </div>
             </div>
         </div>
-        <nav aria-label="breadcrumb">
-            <ol class="breadcrumb">
+        <nav aria-label="breadcrumb" class="pl-4">
+            <h1 class="pl-3">Category</h1>
+            <ol class="breadcrumb mt--4" style="background-color: transparent;">
                 <li class="breadcrumb-item"><a href="#">Home</a></li>
                 <li class="breadcrumb-item"><a href="#">Category</a></li>
                 <li class="breadcrumb-item active" aria-current="page">Update</li>
-                <li class="ml-auto"><a href="..//examples/category-list.html" class="btn btn-danger btn-sm ">Service</a>
+                <li class="ml-auto pr-4">
+                    <div class="btn-group" role="group" aria-label="Basic example">
+                        <a href="../examples/category-update.html"> <button type="button"
+                                class="btn btn-secondary btn-md" style="border-radius: 0%;">Update</button></a>
+                        <a href="../examples/category-list.html"><button type="button" class="btn btn-info btn-md "
+                                style="border-radius: 0%;">Service</button></a>
+                    </div>
                 </li>
             </ol>
         </nav>
-        <div class="container-fluid mt--10">
+        <div class="container-fluid mt--3">
             <!-- Card Wrapper -->
-            <div class="card shadow" style="margin-top: 30px;">
-                <!-- Card Header -->
-                <div class="bg-primary text-white d-flex justify-content-between  flex-wrap">
-                    <h4 class="mb-0 text-white" style="font-size: 18px;">Update Category</h4>
-
-                </div>
-                <!-- Card Body -->
-                <div class="card-body">
-                    <form class="needs-validation" novalidate>
-                        <div class="form-row">
-                            <!-- Event Name -->
-                            <div class="col-md-4 mb-3">
-                                <label for="eventName">Category_Id</label>
-                                <input type="text" class="form-control" id="eventName" placeholder="" required>
-                                <div class="invalid-feedback">
-                                    Please enter a valid event name.
-                                </div>
+            <div class="header bg-primary text-white d-flex justify-content-between align-items-center flex-wrap">
+                <h4 class="pt-2 pl-3 text-white"
+                    style="font-size: 20px; font-family: Georgia, 'Times New Roman', Times, serif;">Update Form</h4>
+                <!-- <a href="..//examples/category_add.html" class=" btn-warning btn-sm mr-2"
+                        style="border-radius: 0px; font-size: 13px;"><i class="bi bi-plus-lg"></i>Add New</a> -->
+                <!-- <li class="ml-auto"><a href="..//examples/category_add.html" class="btn btn-danger btn-sm "><i class="bi bi-plus-lg"></i>Entry</a>
+                </li> -->
+            </div>
+            <!-- Card Body -->
+            <div class="card-body">
+                <form class="needs-validation" novalidate>
+                    <div class="form-row">
+                        <!-- Event Name -->
+                        <div class="col-md-4 mb-3">
+                            <label for="eventName">Category_Id</label>
+                            <input type="text" class="form-control" id="eventName" placeholder="" required>
+                            <div class="invalid-feedback">
+                                Please enter a valid event name.
                             </div>
-
-                            <!-- Service ID -->
-                            <div class="col-md-4 mb-3">
-                                <label for="serviceId">Category_Name</label>
-                                <input type="text" class="form-control" id="serviceId" placeholder="" required>
-                                <div class="invalid-feedback">
-                                    Please enter a valid service ID.
-                                </div>
-                            </div>
-                            <div class="col-md-4 mb-3">
-                                <label for="Description">Date</label>
-                                <input type="text" class="form-control" id="Description" placeholder="">
-                            </div>
-
-
-
                         </div>
 
-                        <div class="form-row">
-
-                            <div class="col-md-12 mb-3">
-                                <label for="Description">Description</label>
-                                <!-- <input type="text" class="form-control" id="Description" placeholder=""> -->
-                                <textarea name="" id="" rows="5" style="resize: none;" class="form-control"></textarea>
+                        <!-- Service ID -->
+                        <div class="col-md-4 mb-3">
+                            <label for="serviceId">Category_Name</label>
+                            <input type="text" class="form-control" id="serviceId" placeholder="" required>
+                            <div class="invalid-feedback">
+                                Please enter a valid service ID.
                             </div>
-
-                            <!-- Cost -->
-
+                        </div>
+                        <div class="col-md-4 mb-3">
+                            <label for="Description">Date</label>
+                            <input type="text" class="form-control" id="Description" placeholder="">
                         </div>
 
-                        <!-- Submit Button -->
-                        <div class="text-center">
-                            <button type="submit" class="btn btn-success px-4">Update</button>
-                            <button type="submit" class="btn btn-danger px-4">Reset</button>
+
+
+                    </div>
+
+                    <div class="form-row">
+                        <!-- Food Name -->
+                        <div class="col-md-12 mb-3">
+                            <label for="Description">Description</label>
+                            <!-- <input type="text" class="form-control" id="Description" placeholder=""> -->
+                            <textarea name="" id="" rows="5" style="resize: none;" class="form-control"></textarea>
                         </div>
-                    </form>
-                </div>
+
+                        <!-- Cost -->
+
+                    </div>
+
+                    <!-- Submit Button -->
+                    <div class="text-center">
+                        <button type="submit" class="btn btn-success px-4"><i
+                                class="bi bi-arrow-bar-up pr-1"></i>Update</button>
+                        <button type="submit" class="btn btn-danger px-4"><i
+                                class="bi bi-arrow-clockwise pr-1"></i>Reset</button>
+                    </div>
+                </form>
             </div>
         </div>
+    </div>
     </div>
 
 

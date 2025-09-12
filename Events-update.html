@@ -100,6 +100,8 @@
   <link href="../assets/js/plugins/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet" />
   <!-- CSS Files -->
   <link href="../assets/css/argon-dashboard.css?v=1.1.2" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+</head>
 </head>
 
 <body class="">
@@ -187,10 +189,10 @@
         </div>
         <!-- Form -->
         <form class="mt-4 mb-3 d-md-none">
-          <div class="input-group input-group-sm mr-2">
+          <div class="input-group input-group-rounded input-group-merge">
             <input type="search" class="form-control form-control-rounded form-control-prepended" placeholder="Search"
               aria-label="Search">
-            <div class="input-group-append">
+            <div class="input-group-prepend">
               <div class="input-group-text">
                 <span class="fa fa-search"></span>
               </div>
@@ -201,63 +203,75 @@
         <ul class="navbar-nav">
           <li class="nav-item  active ">
             <a class="nav-link " href="../index.html">
-              <i class="ni ni-tv-2 text-primary"></i> <h2>Dashboard</h2>
+              <i class="ni ni-tv-2 text-primary"></i>
+              <h2>Dashboard</h2>
             </a>
           </li>
           <li class="nav-item">
             <a class="nav-link " href="../examples/venue-lists.html">
-              <i class="ni ni-planet text-blue"></i><h3>Venue</h3>
+              <i class="ni ni-planet text-blue"></i>
+              <h3>Venue</h3>
             </a>
-            <li class="nav-item">
-              <a class="nav-link" href="../examples/category-list.html">
-                <i class="ni ni-circle-08 text-pink"></i> <h3>Category</h3>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link " href="../examples/services-add.html">
-                <i class="ni ni-bullet-list-67 text-red"></i> <h3>Services</h3>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link " href="../examples/services-add.html">
-                <i class="ni ni-bullet-list-67 text-red"></i> <h3>Visitors</h3>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link " href="../examples/services-add.html">
-                <i class="ni ni-bullet-list-67 text-red"></i> <h3>Customers</h3>
-              </a>
-            </li>
-          </li>
           <li class="nav-item">
-            <a class="nav-link " href="../examples/Event-list.html">
-              <i class="ni ni-pin-3 text-orange"></i><h3> Events</h3>
+            <a class="nav-link" href="../examples/category-list.html">
+              <i class="ni ni-circle-08 text-pink"></i>
+              <h3>Category</h3>
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link " href="../examples/Event-list.html">
-              <i class="ni ni-pin-3 text-orange"></i><h3> Event_Service</h3>
+            <a class="nav-link " href="../examples/services-add.html">
+              <i class="ni ni-bullet-list-67 text-red"></i>
+              <h3>Services</h3>
             </a>
           </li>
           <li class="nav-item">
+            <a class="nav-link " href="../examples/services-add.html">
+              <i class="ni ni-bullet-list-67 text-red"></i>
+              <h3>Visitors</h3>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="../examples/services-add.html">
+              <i class="ni ni-bullet-list-67 text-red"></i>
+              <h3>Customers</h3>
+            </a>
+          </li>
+          </li>
+          <li class="nav-item">
             <a class="nav-link " href="../examples/Event-list.html">
-              <i class="ni ni-pin-3 text-orange"></i><h3> Payment</h3>
+              <i class="ni ni-pin-3 text-orange"></i>
+              <h3> Events</h3>
             </a>
           </li>
           <li class="nav-item">
             <a class="nav-link " href="../examples/Event-list.html">
-              <i class="ni ni-pin-3 text-orange"></i><h3> Feedback</h3>
+              <i class="ni ni-pin-3 text-orange"></i>
+              <h3> Event_Service</h3>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="../examples/payment-list.html">
+              <i class="ni ni-pin-3 text-orange"></i>
+              <h3> payment</h3>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="../examples/Event-list.html">
+              <i class="ni ni-pin-3 text-orange"></i>
+              <h3> Feedback</h3>
             </a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="../examples/login.html">
-              <i class="ni ni-key-25 text-info"></i> <h3>Logout</h3>
+              <i class="ni ni-key-25 text-info"></i>
+              <h3>Logout</h3>
             </a>
           </li>
-          
+
           <li class="nav-item">
             <a class="nav-link  active " href="../examples/profile.html">
-              <i class="ni ni-single-02 text-yellow"></i> <h3>Profile</h3>
+              <i class="ni ni-single-02 text-yellow"></i>
+              <h3>Profile</h3>
             </a>
           </li>
         </ul>
@@ -295,20 +309,20 @@
       <div class="container-fluid">
         <!-- Brand -->
         <!-- <a class="h4 mb-0 text-white text-uppercase d-none d-lg-inline-block" href="../index.html">Events</a> -->
-        <!-- <h1 style="color: white; font-family: Georgia, 'Times New Roman', Times, serif; font-weight: lighter;">Events</h1> -->
+        
         <!-- Form -->
         <form class="navbar-search navbar-search-dark form-inline mr-3 d-none d-md-flex ml-lg-auto">
-          <div class="form-group mb-">
+          <!-- <div class="form-group mb-0">
             <div class="input-group input-group-alternative input-group-sm">
               <div class="input-group-prepend">
                 <span class="input-group-text "><i class="fas fa-search"></i></span>
               </div>
               <input class="form-control form-control-sm" placeholder="Search" type="text">
             </div>
-          </div>
+          </div> -->
         </form>
         <!-- User -->
-        <ul class="navbar-nav align-items-center d-none d-md-flex">
+        <ul class="navbar-nav align-items-center d-none d-md-flex mt--3">
           <li class="nav-item dropdown">
             <a class="nav-link pr-0" href="#" role="button" data-toggle="dropdown" aria-haspopup="true"
               aria-expanded="false">
@@ -353,7 +367,9 @@
     </nav>
     <!-- End Navbar -->
     <!-- Header -->
-    <div class="header bg-gradient-primary pb-3 pt-5 pt-md-6" style="position: relative; bottom: 25px;">
+    <div class="header bg-gradient-primary  pb-5 pt-5 pt-md-5" style="position: relative; bottom: 24px;">
+
+
       <div class="container-fluid">
         <!-- <div class="header-body">
           <div class="row">
@@ -446,12 +462,29 @@
       </div>
     </div>
     <!-- Page content -->
-    <div class="container-fluid mt--10">
+    <nav aria-label="breadcrumb" class="pl-4 mt--4">
+      <h1 class="pl-3">Event</h1>
+      <ol class="breadcrumb mt--4" style="background-color: transparent;">
+        <li class="breadcrumb-item"><a href="#">Home</a></li>
+        <li class="breadcrumb-item"><a href="#">Event</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Update</li>
+        <li class="ml-auto pr-4">
+                    <div class="btn-group" role="group" aria-label="Basic example"> 
+                        <a href="../examples/Events-add.html"> <button type="button"
+                                class="btn btn-secondary btn-md" style="border-radius: 0%;">UPDATE</button></a>
+                        <a href="../examples/Event-list.html"><button type="button"
+                                class="btn btn-info btn-md " style="border-radius: 0%;" >SERVICE</button></a>
+                    </div>
+                </li>
+      </ol>
+    </nav>
+
+    <div class="container-fluid mt--2">
       <!-- Card Wrapper -->
       <div class="card shadow">
-        <div class="card-header bg-primary text-white d-flex justify-content-between align-items-center flex-wrap">
-          <h4 class="mb-0 text-white" style="font-size: 18px;">Update Event</h4>
-          <a href="..//examples/Event-list.html" class="btn btn-danger mt-2 mt-md-0">Go back</a>
+        <div class="header bg-primary text-white d-flex justify-content-between align-items-center flex-wrap">
+          <h4 class="pt-2 pl-3 text-white"
+                        style="font-size: 20px; font-family: Georgia, 'Times New Roman', Times, serif;">Update</h4>
         </div>
         <div class="card-body">
           <form class="needs-validation" novalidate>
@@ -490,13 +523,21 @@
             </div>
 
             <div class="form-row mt-3">
-              <div class="col-md-6 mb-3">
+              <div class="col-md-3 mb-3">
                 <label for="validationCustom01">Service Id</label>
                 <input type="text" class="form-control" id="validationCustom01" placeholder="Enter Event Id" required>
                 <div class="invalid-feedback">
                   Please provide a valid Event Id.
                 </div>
               </div>
+              <div class="col-md-3 mb-3">
+                <label for="validationCustom05">Cost</label>
+                <input type="text" class="form-control" id="validationCustom05" placeholder="Rs....." required>
+                <div class="invalid-feedback">
+                  Please provide a valid cost.
+                </div>
+              </div>
+
               <div class="col-md-3 mb-3">
                 <label for="validationCustom02">Event date</label>
                 <input type="text" class="form-control" id="validationCustom02" placeholder="Enter Event Name" required>
@@ -545,33 +586,25 @@
             </div>
 
             <div class="form-row">
-              <div class="col-md-9 mb-3">
-                <label for="validationCustom03">Description</label>
-                <input type="text" class="form-control" id="validationCustom03" placeholder="Enter Services" required>
-                <div class="invalid-feedback">
-                  Please provide services information.
-                </div>
+              <div class="col-md-12 mb-3">
+                <label for="Description">Description</label>
+                <!-- <input type="text" class="form-control" id="Description" placeholder=""> -->
+                <textarea name="" id="" rows="5" style="resize: none;" class="form-control"></textarea>
               </div>
-              <div class="col-md-3 mb-3">
-                <label for="validationCustom05">Cost</label>
-                <input type="text" class="form-control" id="validationCustom05" placeholder="Rs....." required>
-                <div class="invalid-feedback">
-                  Please provide a valid cost.
-                </div>
-              </div>
+
             </div>
 
             <div class="text-center">
-              <button type="submit" class="btn btn-success px-4">Submit</button>
-              <button type="submit" class="btn btn-danger px-4">Refresh</button>
+              <button type="submit" class="btn btn-success px-4"><i class="bi bi-arrow-bar-up pr-1"></i>Update</button>
+              <button type="submit" class="btn btn-danger px-4"><i class="bi bi-arrow-clockwise pr-1"></i>Refresh</button>
             </div>
           </form>
         </div>
       </div>
     </div>
 
-    <!-- <div class="text-center"><button class="btn bg-gradient-info" type="submit">Update</button></div>
-    </form> -->
+    <!-- <div class="text-center"><button class="btn bg-gradient-info" type="submit">Submit</button></div> -->
+    </form>
 
     <script>
       // Example starter JavaScript for disabling form submissions if there are invalid fields

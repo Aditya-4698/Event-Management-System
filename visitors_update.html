@@ -100,8 +100,6 @@
   <link href="../assets/js/plugins/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet" />
   <!-- CSS Files -->
   <link href="../assets/css/argon-dashboard.css?v=1.1.2" rel="stylesheet" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
-</head>
 </head>
 
 <body class="">
@@ -189,10 +187,10 @@
         </div>
         <!-- Form -->
         <form class="mt-4 mb-3 d-md-none">
-          <div class="input-group input-group-rounded input-group-merge">
+          <div class="input-group input-group-sm mr-2">
             <input type="search" class="form-control form-control-rounded form-control-prepended" placeholder="Search"
               aria-label="Search">
-            <div class="input-group-prepend">
+            <div class="input-group-append">
               <div class="input-group-text">
                 <span class="fa fa-search"></span>
               </div>
@@ -225,7 +223,7 @@
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link " href="../examples/services-add.html">
+            <a class="nav-link " href="../examples/visitors_add.html">
               <i class="ni ni-bullet-list-67 text-red"></i>
               <h3>Visitors</h3>
             </a>
@@ -307,26 +305,22 @@
     <!-- Navbar -->
     <nav class="navbar navbar-top navbar-expand-md navbar-dark" id="navbar-main">
       <div class="container-fluid">
-
-        <!-- <a class="h4 mt-3 text-white text-uppercase d-none d-lg-inline-block" href="../index.html">Venue</a> -->
-        <!-- <h1
-                    style="color: white; font-family: Georgia, 'Times New Roman', Times, serif; font-weight: lighter;position: relative; top: 15px;">
-                    Event</h1> -->
-
-        <form class="navbar-search navbar-search-dark form-inline mr-3 d-none d-md-flex ml-auto">
-          <div class="form-group mb-0">
-            <!-- <div class="input-group input-group-alternative"
-                            style="border: 2px solid white; position: relative; top: 2px;">
-                            <div class="input-group-prepend">
-                                <span class="input-group-text input-group-text-sm"><i class="fas fa-search"></i></span>
-                            </div>
-                            <input class="form-control form-control-sm" placeholder="Search" type="text"
-                                style="color: white; ">
-                        </div> -->
+        <!-- Brand -->
+        <!-- <a class="h4 mb-0 text-white text-uppercase d-none d-lg-inline-block" href="../index.html">Events</a> -->
+        <!-- <h1 style="color: white; font-family: Georgia, 'Times New Roman', Times, serif; font-weight: lighter;">Events</h1> -->
+        <!-- Form -->
+        <form class="navbar-search navbar-search-dark form-inline mr-3 d-none d-md-flex ml-lg-auto">
+          <div class="form-group mb-">
+            <div class="input-group input-group-alternative input-group-sm">
+              <div class="input-group-prepend">
+                <span class="input-group-text "><i class="fas fa-search"></i></span>
+              </div>
+              <input class="form-control form-control-sm" placeholder="Search" type="text">
+            </div>
           </div>
         </form>
-
-        <ul class="navbar-nav align-items-center d-none d-md-flex mt--3">
+        <!-- User -->
+        <ul class="navbar-nav align-items-center d-none d-md-flex">
           <li class="nav-item dropdown">
             <a class="nav-link pr-0" href="#" role="button" data-toggle="dropdown" aria-haspopup="true"
               aria-expanded="false">
@@ -335,7 +329,7 @@
                   <img alt="Image placeholder" src="../assets/img/theme/team-4-800x800.jpg">
                 </span>
                 <div class="media-body ml-2 d-none d-lg-block">
-                  <span class="mb-0 text-sm  font-weight-bold">Aditya</span>
+                  <span class="mb-0 text-sm  font-weight-bold">Jessica Jones</span>
                 </div>
               </div>
             </a>
@@ -371,9 +365,7 @@
     </nav>
     <!-- End Navbar -->
     <!-- Header -->
-    <div class="header bg-gradient-primary  pb-6 pt-5 pt-md-3" style="bottom: 24px;">
-
-
+    <div class="header bg-gradient-primary pb-3 pt-5 pt-md-6" style="position: relative; bottom: 25px;">
       <div class="container-fluid">
         <!-- <div class="header-body">
           <div class="row">
@@ -466,150 +458,130 @@
       </div>
     </div>
     <!-- Page content -->
-    <nav aria-label="breadcrumb" class="pl-4 mt--3">
-      <h1 class="pl-3">Event</h1>
-      <ol class="breadcrumb mt--4" style="background-color: transparent;">
-        <li class="breadcrumb-item"><a href="#">Home</a></li>
-        <li class="breadcrumb-item"><a href="#">Event</a></li>
-        <li class="breadcrumb-item active" aria-current="page">Entry</li>
-        <li class="ml-auto pr-4">
-          <div class="btn-group" role="group" aria-label="Basic example">
-            <a href="../examples/Events-add.html"> <button type="button" class="btn btn-secondary btn-md"
-                style="border-radius: 0%;">ENTRY</button></a>
-            <a href="../examples/Event-list.html"><button type="button" class="btn btn-info btn-md "
-                style="border-radius: 0%;">SERVICE</button></a>
-          </div>
-        </li>
-      </ol>
-    </nav>
+    <div class="container-fluid mt--10">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+        <h1 class="mb-0 text-dark" style="position: relative; bottom: 13px; font-size: 38;">Update</h1>
+        <div>
+            <nav style="--bs-breadcrumb-divider: '>'; position: relative; bottom: 25px; right: 12px;" aria-label="breadcrumb">
+  <ol class="breadcrumb" style="background-color: #f7f9fb;">
+    <li class="breadcrumb-item"><a href="#">Home</a></li>
+    <li class="breadcrumb-item"><a href="#">Visitors</a></li>
+    <li class="breadcrumb-item active" aria-current="page">Update</li>
+    <li class="ml-auto pr-4">
+                    <div class="btn-group" role="group" aria-label="Basic example">
+                        <a href="../examples/serviceadd.html"> <button type="button"
+                                class="btn btn-secondary btn-sm" style="border-radius: 0%;">ENTRY</button></a>
+                        <a href="../examples/serviceadd.html"><button type="button"
+                                class="btn btn-info btn-sm " style="border-radius: 0%;" >SERVICE</button></a>
+                    </div>
+    </li>
+  </ol>
+</nav>
 
-    <div class="container-fluid mt--2">
+        </div>
       <!-- Card Wrapper -->
-      <div class="card shadow">
-        <div class="header bg-primary text-white d-flex justify-content-between align-items-center flex-wrap">
-          <h4 class="pt-2 pl-3 text-white"
-            style="font-size: 20px; font-family: Georgia, 'Times New Roman', Times, serif;">Entry</h4>
+      <div class="card shadow" style="position: relative; bottom: 35px; box-shadow: 7px 7px 7px 9px #1f1f1f;">
+        <div class="card-header bg-primary text-white d-flex justify-content-between align-items-center flex-wrap" style="height: 45px;">
+          <h4 class="mb-0 text-white" style="font-size: 18px; position: relative; bottom: 10px;">Update</h4>
+          <!-- <a href="..//examples/visitors_lists.html" class="btn btn-danger mt-2 mt-md-0">Go back</a> -->
         </div>
         <div class="card-body">
           <form class="needs-validation" novalidate>
             <div class="form-row mt-3">
               <div class="col-md-6 mb-3">
-                <label for="validationCustom01">Event Id</label>
-                <input type="text" class="form-control" id="validationCustom01" placeholder="Enter Event Id" required>
+                <label for="validationCustom01">Visitor Id</label>
+                <input type="text" class="form-control" id="validationCustom01" placeholder="Enter visitor Id" required>
                 <div class="invalid-feedback">
-                  Please provide a valid Event Id.
+                  Please provide a valid Visitor Id.
                 </div>
               </div>
               <div class="col-md-6 mb-3">
-                <label for="validationCustom02">Event Name</label>
-                <input type="text" class="form-control" id="validationCustom02" placeholder="Enter Event Name" required>
+                <label for="validationCustom02">Name</label>
+                <input type="text" class="form-control" id="validationCustom02" placeholder="Enter visitor Name" required>
                 <div class="invalid-feedback">
-                  Please provide a valid Event Name.
+                  Please provide a valid Visitor Name.
                 </div>
               </div>
             </div>
 
             <div class="form-row mt-3">
-              <div class="col-md-6 mb-3">
-                <label for="validationCustom01">Customer Id</label>
-                <input type="text" class="form-control" id="validationCustom01" placeholder="Enter Event Id" required>
+              <div class="col-md-12 mb-3">
+                <label for="validationCustom01">Address</label>
+                <input type="text" class="form-control" id="validationCustom01" placeholder="Enter Address" required>
                 <div class="invalid-feedback">
-                  Please provide a valid Event Id.
-                </div>
-              </div>
-              <div class="col-md-6 mb-3">
-                <label for="validationCustom02">Venue Id</label>
-                <input type="text" class="form-control" id="validationCustom02" placeholder="Enter Event Name" required>
-                <div class="invalid-feedback">
-                  Please provide a valid Event Name.
+                  Please provide a valid Visitor Id.
                 </div>
               </div>
             </div>
 
             <div class="form-row mt-3">
-              <div class="col-md-3 mb-3">
-                <label for="validationCustom01">Service Id</label>
-                <input type="text" class="form-control" id="validationCustom01" placeholder="Enter Event Id" required>
-                <div class="invalid-feedback">
-                  Please provide a valid Event Id.
-                </div>
+              <div class="col-md-4 mb-3">
+                <label for="catering">Distict</label>
+                <select class="custom-select" id="catering" required>
+                  <option selected disabled value="">Choose...</option>
+                  <option>Available</option>
+                  <option>Not Available</option>
+                </select>
               </div>
-              <div class="col-md-3 mb-3">
-                <label for="validationCustom05">Cost</label>
-                <input type="text" class="form-control" id="validationCustom05" placeholder="Rs....." required>
+              <div class="col-md-4 mb-3">
+                <label for="catering">State</label>
+                <select class="custom-select" id="catering" required>
+                  <option selected disabled value="">Choose...</option>
+                  <option>Available</option>
+                  <option>Not Available</option>
+                </select>
+              </div>
+              <div class="col-md-4 mb-3">
+                <label for="validationCustom02">Pin code</label>
+                <input type="text" class="form-control" id="validationCustom02" placeholder="Enter Pincode" required>
                 <div class="invalid-feedback">
-                  Please provide a valid cost.
+                  Please provide a valid Visitor Name.
                 </div>
               </div>
 
-              <div class="col-md-3 mb-3">
-                <label for="validationCustom02">Event date</label>
-                <input type="text" class="form-control" id="validationCustom02" placeholder="Enter Event Name" required>
-                <div class="invalid-feedback">
-                  Please provide a valid Event Name.
-                </div>
-              </div>
-              <div class="col-md-3 mb-3">
-                <label for="validationCustom02">Start date</label>
-                <input type="text" class="form-control" id="validationCustom02" placeholder="Enter Event Name" required>
-                <div class="invalid-feedback">
-                  Please provide a valid Event Name.
-                </div>
-              </div>
             </div>
 
             <div class="form-row mt-3">
-              <div class="col-md-3 mb-3">
-                <label for="validationCustom01">Start time</label>
-                <input type="text" class="form-control" id="validationCustom01" placeholder="Enter Event Id" required>
+              <div class="col-md-4 mb-3">
+                <label for="validationCustom01">Contact</label>
+                <input type="text" class="form-control" id="validationCustom01" placeholder="Enter Contact No." required>
                 <div class="invalid-feedback">
-                  Please provide a valid Event Id.
+                  Please provide a valid Visitor Id.
                 </div>
               </div>
-              <div class="col-md-3 mb-3">
-                <label for="validationCustom02">End date</label>
-                <input type="text" class="form-control" id="validationCustom02" placeholder="Enter Event Name" required>
+              <div class="col-md-4 mb-3">
+                <label for="validationCustom02">Alternate No.</label>
+                <input type="text" class="form-control" id="validationCustom02" placeholder="Enter Alternate No." required>
                 <div class="invalid-feedback">
-                  Please provide a valid Event Name.
+                  Please provide a valid Visitor Name.
                 </div>
               </div>
-              <div class="col-md-3 mb-3">
-                <label for="validationCustom02">End time</label>
-                <input type="text" class="form-control" id="validationCustom02" placeholder="Enter Event Name" required>
-                <div class="invalid-feedback">
-                  Please provide a valid Event Name.
-                </div>
-              </div>
-              <div class="col-md-3 mb-3">
-                <label for="validationCustom02">Max Participant</label>
-                <input type="text" class="form-control" id="validationCustom02" placeholder="Enter Event Name" required>
-                <div class="invalid-feedback">
-                  Please provide a valid Event Name.
-                </div>
-              </div>
+
+              
             </div>
 
             <div class="form-row">
               <div class="col-md-12 mb-3">
-                <label for="Description">Description</label>
-                <!-- <input type="text" class="form-control" id="Description" placeholder=""> -->
-                <textarea name="" id="" rows="5" style="resize: none;" class="form-control"></textarea>
+                <label for="validationCustom03">Purpose</label>
+                <input type="text" class="form-control" id="validationCustom03" placeholder="Enter Services" required>
+                <div class="invalid-feedback">
+                  Please provide services information.
+                </div>
               </div>
-
+              
             </div>
 
             <div class="text-center">
-              <button type="submit" class="btn btn-success px-4"><i class="bi bi-check2-all pr-1"></i>Submit</button>
-              <button type="submit" class="btn btn-danger px-4"><i
-                  class="bi bi-arrow-clockwise pr-1"></i>Refresh</button>
+              <button type="submit" class="btn btn-success px-4"><i class="bi bi-check2-all pr-1"></i>Update</button>
+              <button type="submit" class="btn btn-danger px-4"><i class="bi bi-arrow-clockwise pr-1"></i>Refresh</button>
             </div>
           </form>
         </div>
       </div>
     </div>
 
-    <!-- <div class="text-center"><button class="btn bg-gradient-info" type="submit">Submit</button></div> -->
-    </form>
+    <!-- <div class="text-center"><button class="btn bg-gradient-info" type="submit">Update</button></div>
+    </form> -->
 
     <script>
       // Example starter JavaScript for disabling form submissions if there are invalid fields

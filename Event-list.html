@@ -31,6 +31,7 @@
     <link href="../assets/js/plugins/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet" />
     <!-- CSS Files -->
     <link href="../assets/css/argon-dashboard.css?v=1.1.2" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
 </head>
 
 <body class="">
@@ -179,9 +180,9 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link " href="../examples/Event-list.html">
+                        <a class="nav-link " href="../examples/payment-list.html">
                             <i class="ni ni-pin-3 text-orange"></i>
-                            <h3> Payment</h3>
+                            <h3> payment</h3>
                         </a>
                     </li>
                     <li class="nav-item">
@@ -215,20 +216,20 @@
             <div class="container-fluid">
 
                 <!-- <a class="h4 mt-3 text-white text-uppercase d-none d-lg-inline-block" href="../index.html">Venue</a> -->
-                <h1
+                <!-- <h1
                     style="color: white; font-family: Georgia, 'Times New Roman', Times, serif; font-weight: lighter;position: relative; top: 15px;">
-                    Event</h1>
+                    Event</h1> -->
 
                 <form class="navbar-search navbar-search-dark form-inline mr-3 d-none d-md-flex ml-auto">
                     <div class="form-group mb-0">
-                        <div class="input-group input-group-alternative"
+                        <!-- <div class="input-group input-group-alternative"
                             style="border: 2px solid white; position: relative; top: 2px;">
                             <div class="input-group-prepend">
                                 <span class="input-group-text input-group-text-sm"><i class="fas fa-search"></i></span>
                             </div>
                             <input class="form-control form-control-sm" placeholder="Search" type="text"
                                 style="color: white; ">
-                        </div>
+                        </div> -->
                     </div>
                 </form>
 
@@ -241,7 +242,7 @@
                                     <img alt="Image placeholder" src="../assets/img/theme/team-4-800x800.jpg">
                                 </span>
                                 <div class="media-body ml-2 d-none d-lg-block">
-                                    <span class="mb-0 text-sm  font-weight-bold">Jessica Jones</span>
+                                    <span class="mb-0 text-sm  font-weight-bold">Aditya</span>
                                 </div>
                             </div>
                         </a>
@@ -279,54 +280,62 @@
 
         <div class="header bg-gradient-primary pb-6 pt-5 pt-md-3"></div>
 
-        <nav aria-label="breadcrumb">
-            <ol class="breadcrumb">
+        <nav aria-label="breadcrumb" class="pl-4">
+            <h1 class="pl-3">Event</h1>
+            <ol class="breadcrumb mt--4" style="background-color: transparent;">
+                <li class="breadcrumb-item"><a href="#">Home</a></li>
                 <li class="breadcrumb-item"><a href="#">Home</a></li>
                 <li class="breadcrumb-item"><a href="#">Event</a></li>
                 <li class="breadcrumb-item active" aria-current="page">Service</li>
-                <li class="ml-auto"><a href="..//examples/Events-add.html" class="btn btn-danger btn-sm ">Entry</a>
-                </li>
+                <!-- <li class="ml-auto"><a href="..//examples/Events-add.html" class="btn btn-danger btn-sm ">Entry</a>
+                </li> -->
             </ol>
         </nav>
 
-        <div class="container-fluid mt-4">
+        <div class="container-fluid mt--2">
             <div class="card shadow">
 
-                <!-- Card Header -->
-                <div
-                    class=" bg-primary text-white d-flex justify-content-between align-items-center flex-wrap">
-                    <h4 class="mb-0 text-white" style="font-size: 18px;">Event</h4>
 
+                <div class="header bg-primary text-white d-flex justify-content-between align-items-center flex-wrap">
+                    <h4 class="pt-2 pl-3 text-white" style="font-size: 20px;">Event</h4>
+                    <a href="..//examples/Events-add.html" class=" btn-info btn-sm mr-2"
+                        style="border-radius: 0px; font-size: 13px;"><i class="bi bi-plus-lg pr-1"></i>Entry New</a>
                 </div>
 
                 <!-- Search Form -->
                 <div class="card-body border-bottom">
                     <form class="row">
+                        <div class="col-md-4">
+
+                            <label for="validationCustom01">Event ID</label>
+                            <input type="text" class="form-control" id="validationCustom01"
+                                placeholder="Enter Event ID">
+
+                        </div>
 
                         <div class="col-md-4">
-                            <input type="text" class="form-control" placeholder="Event ID">
+
+                            <label for="validationCustom01">Venue Name</label>
+                            <input type="text" class="form-control" id="validationCustom01"
+                                placeholder="Enter Venue Name">
                         </div>
+
                         <div class="col-md-4">
-                            <input type="text" class="form-control" placeholder="Venue ID">
-                        </div>
-                        <div class="col-2 md-2 mb-2 d-flex justify-content-end">
-                            <div class="d-flex w-120" style="max-width: 0px;">
-                                <!-- Search Button -->
-                                <button type="submit" class="btn btn-warning flex-fill mr-3">
-                                    <i class="fa-solid fa-magnifying-glass mr-1"></i> Search
-                                </button>
 
-                                <!-- Reset Button -->
-                                <button type="reset" class="btn btn-success flex-fill">
-                                    <i class="fa-solid fa-trash-can-arrow-up mr-1"></i> Reset
-                                </button>
-                            </div>
+                            <label for="validationCustom01">Service name</label>
+                            <input type="text" class="form-control" id="validationCustom01"
+                                placeholder="Enter Service name">
                         </div>
-
+                    </form>
+                    <form class="row mt-3">
+                        <div class="col-md-12 d-flex justify-content-center ">
+                            <button type="submit" class="btn btn-success btn-sm"><i
+                                    class="bi bi-search pr-1"></i>SEARCH</button>
+                            <button type="reset" class="btn btn-danger btn-sm "><i
+                                    class="bi bi-arrow-clockwise pr-1"></i>REFRESH</button>
+                        </div>
                     </form>
                 </div>
-
-
             </div>
         </div>
 
@@ -334,15 +343,11 @@
         <div class="container-fluid mt-4">
             <div class="card shadow">
 
-                <div
-                    class=" bg-primary text-white d-flex justify-content-between align-items-center flex-wrap">
-                    <h4 class="mb-0 text-white" style="font-size: 18px;">Events Lists</h4>
-                    <!-- <a href="..//examples/Events-add.html" class="btn btn-danger mt-2 mt-md-0">Add</a> -->
-                </div>
+
 
                 <div class="card-body table-responsive p-0">
-                    <table class="table table-hover table-bordered mb-0">
-                        <thead class="bg-gradient-success">
+                    <table class="table table-hover  mb-0">
+                        <thead class="bg-dark">
                             <tr class="text-right">
                                 <th scope="col" style="font-size: 11px; color: white;">#</th>
                                 <th scope="col" style="font-size: 11px; color: white;">Event_Id</th>
@@ -367,9 +372,13 @@
                                 <td></td>
                                 <td></td>
                                 <td></td>
-                                <td class="text-center">
-                                    <input type="button" value="Update" class="btn btn-warning btn-sm mx-1">
-                                    <input type="button" value="Delete" class="btn btn-danger btn-sm">
+                                <td>
+                                    <a href="Events-update.html" class="btn btn-success btn-sm mx-1">
+                                        <i class="bi bi-pencil-square pr-"></i> Update
+                                    </a>
+                                    <a href="delete-page.html" class="btn btn-danger btn-sm">
+                                        <i class="bi bi-trash3-fill pr-0"></i> Delete
+                                    </a>
                                 </td>
                             </tr>
                             <tr class="text-right">
@@ -382,9 +391,11 @@
                                 <td></td>
                                 <td></td>
                                 <td></td>
-                                <td class="text-center">
-                                    <input type="button" value="Update" class="btn btn-warning btn-sm mx-1">
-                                    <input type="button" value="Delete" class="btn btn-danger btn-sm">
+                                <td>
+                                    <button class="btn btn-success btn-sm mx-1"><i
+                                            class="bi bi-pencil-square pr-1"></i>Update</button>
+                                    <button class="btn btn-danger btn-sm"><i
+                                            class="bi bi-trash3-fill pr-1"></i>Delete</button>
                                 </td>
                             </tr>
                             <tr class="text-right">
@@ -397,9 +408,11 @@
                                 <td></td>
                                 <td></td>
                                 <td></td>
-                                <td class="text-center">
-                                    <input type="button" value="Update" class="btn btn-warning btn-sm mx-1">
-                                    <input type="button" value="Delete" class="btn btn-danger btn-sm">
+                                <td>
+                                    <button class="btn btn-success btn-sm mx-1"><i
+                                            class="bi bi-pencil-square pr-1"></i>Update</button>
+                                    <button class="btn btn-danger btn-sm"><i
+                                            class="bi bi-trash3-fill pr-1"></i>Delete</button>
                                 </td>
                             </tr>
                         </tbody>

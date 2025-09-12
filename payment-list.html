@@ -1,0 +1,473 @@
+<!--
+
+=========================================================
+* Argon Dashboard - v1.1.2
+=========================================================
+
+* Product Page: https://www.creative-tim.com/product/argon-dashboard
+* Copyright 2020 Creative Tim (https://www.creative-tim.com)
+* Licensed under MIT (https://github.com/creativetimofficial/argon-dashboard/blob/master/LICENSE.md)
+
+* Coded by Creative Tim
+
+=========================================================
+
+* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software. -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>
+        Argon Dashboard - Free Dashboard for Bootstrap 4 by Creative Tim
+    </title>
+    <!-- Favicon -->
+    <link href="../assets/img/brand/favicon.png" rel="icon" type="image/png">
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+    <!-- Icons -->
+    <link href="../assets/js/plugins/nucleo/css/nucleo.css" rel="stylesheet" />
+    <link href="../assets/js/plugins/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet" />
+    <!-- CSS Files -->
+    <link href="../assets/css/argon-dashboard.css?v=1.1.2" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+</head>
+
+<body class="">
+    <nav class="navbar navbar-vertical fixed-left navbar-expand-md navbar-light bg-white" id="sidenav-main">
+        <div class="container-fluid">
+            <!-- Toggler -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#sidenav-collapse-main"
+                aria-controls="sidenav-main" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Brand -->
+            <a class="navbar-brand pt-0" href="../index.html">
+                <img src="../assets/img/brand/blue.png" class="navbar-brand-img" alt="...">
+            </a>
+            <!-- User -->
+            <ul class="nav align-items-center d-md-none">
+                <li class="nav-item dropdown">
+                    <a class="nav-link nav-link-icon" href="#" role="button" data-toggle="dropdown" aria-haspopup="true"
+                        aria-expanded="false">
+                        <i class="ni ni-bell-55"></i>
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-arrow dropdown-menu-right"
+                        aria-labelledby="navbar-default_dropdown_1">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link" href="#" role="button" data-toggle="dropdown" aria-haspopup="true"
+                        aria-expanded="false">
+                        <div class="media align-items-center">
+                            <span class="avatar avatar-sm rounded-circle">
+                                <img alt="Image placeholder" src="../assets/img/theme/team-1-800x800.jpg
+">
+                            </span>
+                        </div>
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-arrow dropdown-menu-right">
+                        <div class=" dropdown-header noti-title">
+                            <h6 class="text-overflow m-0">Welcome!</h6>
+                        </div>
+                        <a href="../examples/profile.html" class="dropdown-item">
+                            <i class="ni ni-single-02"></i>
+                            <span>My profile</span>
+                        </a>
+                        <a href="../examples/profile.html" class="dropdown-item">
+                            <i class="ni ni-settings-gear-65"></i>
+                            <span>Settings</span>
+                        </a>
+                        <a href="../examples/profile.html" class="dropdown-item">
+                            <i class="ni ni-calendar-grid-58"></i>
+                            <span>Activity</span>
+                        </a>
+                        <a href="../examples/profile.html" class="dropdown-item">
+                            <i class="ni ni-support-16"></i>
+                            <span>Support</span>
+                        </a>
+                        <div class="dropdown-divider"></div>
+                        <a href="#!" class="dropdown-item">
+                            <i class="ni ni-user-run"></i>
+                            <span>Logout</span>
+                        </a>
+                    </div>
+                </li>
+            </ul>
+            <!-- Collapse -->
+            <div class="collapse navbar-collapse" id="sidenav-collapse-main">
+                <!-- Collapse header -->
+                <div class="navbar-collapse-header d-md-none">
+                    <div class="row">
+                        <div class="col-6 collapse-brand">
+                            <a href="../index.html">
+                                <img src="../assets/img/brand/blue.png">
+                            </a>
+                        </div>
+                        <div class="col-6 collapse-close">
+                            <button type="button" class="navbar-toggler" data-toggle="collapse"
+                                data-target="#sidenav-collapse-main" aria-controls="sidenav-main" aria-expanded="false"
+                                aria-label="Toggle sidenav">
+                                <span></span>
+                                <span></span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Form -->
+                <form class="mt-4 mb-3 d-md-none">
+                    <div class="input-group input-group-rounded input-group-merge">
+                        <input type="search" class="form-control form-control-rounded form-control-prepended"
+                            placeholder="Search" aria-label="Search">
+                        <div class="input-group-prepend">
+                            <div class="input-group-text">
+                                <span class="fa fa-search"></span>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+                <!-- Navigation -->
+                <ul class="navbar-nav">
+                    <li class="nav-item  active ">
+                        <a class="nav-link " href="../index.html">
+                            <i class="ni ni-tv-2 text-primary"></i>
+                            <h2>Dashboard</h2>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="../examples/venue-lists.html">
+                            <i class="ni ni-planet text-blue"></i>
+                            <h3>Venue</h3>
+                        </a>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../examples/category-list.html">
+                            <i class="ni ni-circle-08 text-pink"></i>
+                            <h3>Category</h3>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="../examples/services-add.html">
+                            <i class="ni ni-bullet-list-67 text-red"></i>
+                            <h3>Services</h3>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="../examples/visitors_lists.html">
+                            <i class="ni ni-bullet-list-67 text-red"></i>
+                            <h3>Visitors</h3>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="../examples/services-add.html">
+                            <i class="ni ni-bullet-list-67 text-red"></i>
+                            <h3>Customers</h3>
+                        </a>
+                    </li>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="../examples/Event-list.html">
+                            <i class="ni ni-pin-3 text-orange"></i>
+                            <h3> Events</h3>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="../examples/Event-list.html">
+                            <i class="ni ni-pin-3 text-orange"></i>
+                            <h3> Event_Service</h3>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="../examples/payment-list.html">
+                            <i class="ni ni-pin-3 text-orange"></i>
+                            <h3> payment</h3>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="../examples/feedback-list.html">
+                            <i class="ni ni-pin-3 text-orange"></i>
+                            <h3> Feedback</h3>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../examples/login.html">
+                            <i class="ni ni-key-25 text-info"></i>
+                            <h3>Logout</h3>
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link  active " href="../examples/profile.html">
+                            <i class="ni ni-single-02 text-yellow"></i>
+                            <h3>Profile</h3>
+                        </a>
+                    </li>
+                </ul>
+                <!-- Divider -->
+                <hr class="my-3">
+                <!-- Heading -->
+                <!-- Navigation -->
+            </div>
+        </div>
+    </nav>
+    <div class="main-content">
+        <!-- Navbar -->
+        <div class="main-content">
+            <!-- Navbar -->
+            <nav class="navbar navbar-top navbar-expand-md navbar-dark" id="navbar-main">
+                <div class="container-fluid">
+                    <!-- Brand -->
+                    <!-- <a class="h4 mb-0 text-white text-uppercase d-none d-lg-inline-block"
+                        href="../index.html">Services</a> -->
+                    <!-- Form -->
+                    <form class="navbar-search navbar-search-dark form-inline mr-3 d-none d-md-flex ml-lg-auto">
+                        <div class="form-group mb-0">
+                            <!-- <div class="input-group input-group-alternative">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text"><i class="fas fa-search"></i></span>
+                                </div>
+                                <input class="form-control" placeholder="Search" type="text">
+                            </div> -->
+                        </div>
+                    </form>
+                    <!-- User -->
+                    <ul class="navbar-nav align-items-center d-none d-md-flex">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link pr-0" href="#" role="button" data-toggle="dropdown" aria-haspopup="true"
+                                aria-expanded="false">
+                                <div class="media align-items-center">
+                                    <span class="avatar avatar-sm rounded-circle">
+                                        <img alt="Image placeholder" src="../assets/img/theme/team-4-800x800.jpg">
+                                    </span>
+                                    <div class="media-body ml-2 d-none d-lg-block">
+                                        <span class="mb-0 text-sm  font-weight-bold">Aditya</span>
+                                    </div>
+                                </div>
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-arrow dropdown-menu-right">
+                                <div class=" dropdown-header noti-title">
+                                    <h6 class="text-overflow m-0">Welcome!</h6>
+                                </div>
+                                <a href="../examples/profile.html" class="dropdown-item">
+                                    <i class="ni ni-single-02"></i>
+                                    <span>My profile</span>
+                                </a>
+                                <a href="../examples/profile.html" class="dropdown-item">
+                                    <i class="ni ni-settings-gear-65"></i>
+                                    <span>Settings</span>
+                                </a>
+                                <a href="../examples/profile.html" class="dropdown-item">
+                                    <i class="ni ni-calendar-grid-58"></i>
+                                    <span>Activity</span>
+                                </a>
+                                <a href="../examples/profile.html" class="dropdown-item">
+                                    <i class="ni ni-support-16"></i>
+                                    <span>Support</span>
+                                </a>
+                                <div class="dropdown-divider"></div>
+                                <a href="#!" class="dropdown-item">
+                                    <i class="ni ni-user-run"></i>
+                                    <span>Logout</span>
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <!-- End Navbar -->
+            <!-- Header -->
+            <div class="header bg-gradient-primary pb-4 pt-5 pt-5 md-4">
+                <div class="container-fluid">
+                    <div class="header-body">
+                        <!-- Card stats -->
+
+                    </div>
+                </div>
+            </div>
+            <nav aria-label="breadcrumb" class="pl-4 pt-2">
+                <h1 class="pl-3">Payment</h1>
+                <ol class="breadcrumb mt--4" style="background-color:transparent;">
+                    <li class="breadcrumb-item"><a href="#">Home</a></li>
+                    <li class="breadcrumb-item"><a href="#">Payment</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Search</li>
+
+                </ol>
+
+            </nav>
+            <div class="container-fluid mt--2">
+                <div class="card shadow">
+
+
+                    <div
+                        class="header bg-primary text-white d-flex justify-content-between align-items-center flex-wrap">
+                        <h4 class="pt-2 pl-3 text-white" style="font-size: 20px;">Payment Details</h4>
+                        <a href="..//examples/payment-add.html" class=" btn-info btn-sm mr-2"
+                            style="border-radius: 0px; font-size: 13px;"><i class="bi bi-plus-lg pr-1"></i>Entry</a>
+                    </div>
+
+                    <!-- Search Form -->
+                    <div class="card-body border-bottom">
+                        <form class="row">
+                            <div class="col-md-3">
+                                <label for="validationCustom01">Payment ID</label>
+                                <input type="text" class="form-control" id="validationCustom01"
+                                    placeholder="Enter Service ID">
+                            </div>
+                            <div class="col-md-3">
+                                <label for="validationCustom01">Event ID</label>
+                                <input type="text" class="form-control" id="validationCustom01"
+                                    placeholder="Enter Service ID">
+                            </div>
+
+                            <div class="col-md-3">
+
+                                <label for="validationCustom01">Customer Id</label>
+                                <input type="text" class="form-control" id="validationCustom01" placeholder="">
+                            </div>
+                            <div class="col-md-3">
+
+                                <label for="validationCustom01">Transaction date</label>
+                                <input type="text" class="form-control" id="validationCustom01" placeholder="">
+                            </div>
+
+                        </form>
+                        <form class="row mt-3">
+                            <div class="col-md-12 d-flex justify-content-center ">
+                                <button type="submit" class="btn btn-success btn-sm"><i
+                                        class="bi bi-search pr-1"></i>SEARCH</button>
+                                <button type="reset" class="btn btn-danger btn-sm "><i
+                                        class="bi bi-arrow-clockwise pr-1"></i>REFRESH</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="container-fluid mt-4">
+                <div class="card shadow">
+
+
+
+                    <!-- Card Body -->
+                    <div class="card-body p-0">
+                        <div class="table-responsive">
+                            <table class="table table-striped table-hover  mb-0">
+                                <thead class="bg-dark" style="color:white;">
+                                    <tr class="text-center">
+                                        <th style="font-size:11px;">#</th>
+                                        <th style="font-size:11px;">Payment ID</th>
+                                        <th style="font-size:11px;">Event id</th>
+                                        <th style="font-size:11px;">Customer Name</th>
+                                        <th style="font-size:11px;">Paid Amount</th>
+                                        <th style="font-size:11px;">Pay Mode</th>
+                                        <!-- <th style="font-size:11px;">Paid Amount</th> -->
+                                        <th style="font-size:11px;">Action</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="text-center">
+                                        <td>1</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+
+                                        <td>
+                                            <a href="..//examples/payment-update.html"><button
+                                                    class="btn btn-success btn-sm mx-1"><i
+                                                        class="bi bi-pencil-square pr-1"></i>Update</button></a>
+                                            <button class="btn btn-danger btn-sm"><i
+                                                    class="bi bi-trash3-fill pr-1"></i>Delete</button>
+                                        </td>
+                                    </tr>
+                                    <tr class="text-center">
+                                        <td>2</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+
+                                        <td>
+                                            <a href="..//examples/payment-update.html"><button
+                                                    class="btn btn-success btn-sm mx-1"><i
+                                                        class="bi bi-pencil-square pr-1"></i>Update</button></a>
+                                            <button class="btn btn-danger btn-sm"><i
+                                                    class="bi bi-trash3-fill pr-1"></i>Delete</button>
+                                        </td>
+                                    </tr>
+                                    <tr class="text-center">
+                                        <td>3</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+
+                                        <td>
+                                            <a href="..//examples/payment-update.html"><button
+                                                    class="btn btn-success btn-sm mx-1"><i
+                                                        class="bi bi-pencil-square pr-1"></i>Update</button></a>
+                                            <button class="btn btn-danger btn-sm"><i
+                                                    class="bi bi-trash3-fill pr-1"></i>Delete</button>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                document.querySelectorAll('.btn-warning').forEach(btn => {
+                    btn.addEventListener('click', function () {
+                        alert('Update button clicked!');
+                    });
+                });
+
+                document.querySelectorAll('.btn-danger').forEach(btn => {
+                    btn.addEventListener('click', function () {
+                        alert('Delete button clicked!');
+                    });
+                });
+                document.addEventListener('click', function (e) {
+                    if (e.target.classList.contains('delete-btn')) {
+                        const row = e.target.closest('tr');
+                        const userName = row.cells[1].innerText;
+                        if (confirm('Delete ' + userName + '?')) {
+                            row.remove();
+                        }
+                    }
+                });
+
+            });
+        </script>
+
+        <!--   Core   -->
+        <script src="../assets/js/plugins/jquery/dist/jquery.min.js"></script>
+        <script src="../assets/js/plugins/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+        <!--   Optional JS   -->
+        <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY_HERE"></script>
+        <!--   Argon JS   -->
+        <script src="../assets/js/argon-dashboard.min.js?v=1.1.2"></script>
+        <script src="https://cdn.trackjs.com/agent/v3/latest/t.js"></script>
+        <script>
+            window.TrackJS &&
+                TrackJS.install({
+                    token: "ee6fab19c5a04ac1a32a645abde4613a",
+                    application: "argon-dashboard-free"
+                });
+        </script>
+</body>
+
+</html>
