@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -6,7 +5,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>
-        Event Management Dashboard
+        Event Management System
     </title>
     <!-- Favicon -->
     <link href="../assets/img/brand/favicon.png" rel="icon" type="image/png">
@@ -30,7 +29,8 @@
             </button>
             <!-- Brand -->
             <a class="navbar-brand pt-0" href="../index.html">
-                <img src="../assets/img/brand/logo.PNG" class="navbar-brand-img" alt="..."style="width: 150px; height:40px;">
+                <img src="../assets/img/brand/logo.PNG" class="navbar-brand-img" alt="..."
+                    style="width: 150px; height: 50px;">
             </a>
             <!-- User -->
             <ul class="nav align-items-center d-md-none">
@@ -132,7 +132,7 @@
                         </a>
                     <li class="nav-item">
                         <a class="nav-link" href="../examples/category-list.html">
-                           <i class="bi bi-list-task"></i> </i>
+                            <i class="bi bi-list-task"></i> </i>
                             <h3>Category</h3>
                         </a>
                     </li>
@@ -143,13 +143,13 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link " href="../examples/visitors_lists.html">
+                        <a class="nav-link " href="../examples/visitors_add.html">
                             <i class="bi bi-person-lines-fill"></i>
                             <h3>Visitors</h3>
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link " href="../examples/customer-list.html">
+                        <a class="nav-link " href="../examples/customer-add.html">
                             <i class="bi bi-person-lines-fill"></i>
                             <h3>Customers</h3>
                         </a>
@@ -174,7 +174,7 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link " href="../examples/feedback-list.html">
+                        <a class="nav-link " href="../examples/Event-list.html">
                             <i class="bi bi-credit-card"></i>
                             <h3> Feedback</h3>
                         </a>
@@ -193,6 +193,7 @@
                         </a>
                     </li>
                 </ul>
+
                 <!-- Divider -->
                 <hr class="my-3">
                 <!-- Heading -->
@@ -211,14 +212,14 @@
                         href="../index.html">Services</a> -->
                     <!-- Form -->
                     <form class="navbar-search navbar-search-dark form-inline mr-3 d-none d-md-flex ml-lg-auto">
-                        <div class="form-group mb-0">
-                            <!-- <div class="input-group input-group-alternative">
+                        <!-- <div class="form-group mb-0">
+                            <div class="input-group input-group-alternative">
                                 <div class="input-group-prepend">
                                     <span class="input-group-text"><i class="fas fa-search"></i></span>
                                 </div>
                                 <input class="form-control" placeholder="Search" type="text">
-                            </div> -->
-                        </div>
+                            </div>
+                        </div> -->
                     </form>
                     <!-- User -->
                     <ul class="navbar-nav align-items-center d-none d-md-flex">
@@ -274,11 +275,11 @@
                     </div>
                 </div>
             </div>
-            <nav aria-label="breadcrumb" class="pl-4 pt-1">
-                <h1 class="pl-3">Payment</h1>
+            <nav aria-label="breadcrumb" class="pl-4 pt-2">
+                <h1 class="pl-3">Customer</h1>
                 <ol class="breadcrumb mt--4" style="background-color:transparent;">
                     <li class="breadcrumb-item"><a href="#">Home</a></li>
-                    <li class="breadcrumb-item"><a href="#">Payment</a></li>
+                    <li class="breadcrumb-item"><a href="#">Customer</a></li>
                     <li class="breadcrumb-item active" aria-current="page">Search</li>
 
                 </ol>
@@ -290,36 +291,57 @@
 
                     <div
                         class="header bg-primary text-white d-flex justify-content-between align-items-center flex-wrap">
-                        <h4 class="pt-2 pl-3 text-white" style="font-size: 20px;">Payment Details</h4>
-                        <a href="..//examples/payment-add.html" class=" btn-info btn-sm mr-2"
-                            style="border-radius: 0px; font-size: 13px;"><i class="bi bi-plus-lg pr-1"></i>Entry</a>
+                        <h4 class="pt-2 pl-3 text-white" style="font-size: 20px;">Customer Form</h4>
+                        <a href="..//examples/customer-add.html" class=" btn-info btn-sm mr-2"
+                            style="border-radius: 0px; font-size: 13px;"><i class="bi bi-plus-lg pr-1"></i>Add New</a>
                     </div>
 
                     <!-- Search Form -->
                     <div class="card-body border-bottom">
                         <form class="row">
-                            <div class="col-md-3">
-                                <label for="validationCustom01">Payment ID</label>
+                            <div class="col-md-4">
+                                <label for="validationCustom01">Customer ID</label>
                                 <input type="text" class="form-control" id="validationCustom01"
-                                    placeholder="Enter Service ID">
+                                    placeholder="Enter customer ID">
                             </div>
-                            <div class="col-md-3">
-                                <label for="validationCustom01">Event ID</label>
+
+                            <div class="col-md-4">
+                                <label for="validationCustom01">Name</label>
                                 <input type="text" class="form-control" id="validationCustom01"
-                                    placeholder="Enter Service ID">
+                                    placeholder="Enter name">
                             </div>
 
-                            <div class="col-md-3">
-
-                                <label for="validationCustom01">Customer Name</label>
-                                <input type="text" class="form-control" id="validationCustom01" placeholder="">
+                            <div class="col-md-4">
+                                <label for="validationCustom01">District</label>
+                                <input type="text" class="form-control" id="validationCustom01"
+                                    placeholder="Enter district">
                             </div>
-                            <div class="col-md-3">
-
-                                <label for="validationCustom01">Transaction date</label>
-                                <input type="date" class="form-control" id="validationCustom01" placeholder="">
+                        </form>
+                        <form class="row pt-3">
+                            <div class="col-md-12">
+                                <label for="validationCustom01">Address</label>
+                                <input type="text" class="form-control" id="validationCustom01"
+                                    placeholder="Enter address">
+                            </div>
+                        </form>
+                        <form class="row pt-3">
+                            <div class="col-md-4">
+                                <label for="validationCustom01">State</label>
+                                <input type="text" class="form-control" id="validationCustom01"
+                                    placeholder="Enter state">
                             </div>
 
+                            <div class="col-md-4">
+                                <label for="validationCustom01">Pin_code</label>
+                                <input type="text" class="form-control" id="validationCustom01"
+                                    placeholder="Enter pin_code">
+                            </div>
+
+                            <div class="col-md-4">
+                                <label for="validationCustom01">Contant no.</label>
+                                <input type="text" class="form-control" id="validationCustom01"
+                                    placeholder="Enter Content no.">
+                            </div>
                         </form>
                         <form class="row mt-3">
                             <div class="col-md-12 d-flex justify-content-center ">
@@ -346,12 +368,15 @@
                                 <thead class="bg-dark" style="color:white;">
                                     <tr class="text-center">
                                         <th style="font-size:11px;">#</th>
-                                        <th style="font-size:11px;">Payment ID</th>
-                                        <th style="font-size:11px;">Event id</th>
-                                        <th style="font-size:11px;">Customer Name</th>
-                                        <th style="font-size:11px;">Paid Amount</th>
-                                        <th style="font-size:11px;">Pay Mode</th>
-                                        <!-- <th style="font-size:11px;">Paid Amount</th> -->
+                                        <th style="font-size:11px;">Customer ID</th>
+                                        <th style="font-size:11px;">Name</th>
+                                        <th style="font-size:11px;">Address</th>
+                                        <th style="font-size:11px;">District</th>
+                                        <th style="font-size:11px;">State</th>
+                                        <th style="font-size:11px;">Pin_code</th>
+                                        <th style="font-size:11px;">Addhar no.</th>
+                                        <th style="font-size:11px;">Contact</th>
+                                        <th style="font-size:11px;">Alt_contact</th>
                                         <th style="font-size:11px;">Action</th>
                                     </tr>
                                 </thead>
@@ -363,9 +388,12 @@
                                         <td></td>
                                         <td></td>
                                         <td></td>
-
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
                                         <td>
-                                            <a href="..//examples/payment-update.html"><button
+                                            <a href="..//examples/customer-update.html"><button
                                                     class="btn btn-success btn-sm mx-1"><i
                                                         class="bi bi-pencil-square pr-1"></i>Update</button></a>
                                             <button class="btn btn-danger btn-sm"><i
@@ -373,31 +401,38 @@
                                         </td>
                                     </tr>
                                     <tr class="text-center">
-                                        <td>2</td>
+                                        <td>1</td>
                                         <td></td>
                                         <td></td>
                                         <td></td>
                                         <td></td>
                                         <td></td>
-
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
                                         <td>
-                                            <a href="..//examples/payment-update.html"><button
+                                            <a href="..//examples/customer-update.html"><button
                                                     class="btn btn-success btn-sm mx-1"><i
                                                         class="bi bi-pencil-square pr-1"></i>Update</button></a>
                                             <button class="btn btn-danger btn-sm"><i
                                                     class="bi bi-trash3-fill pr-1"></i>Delete</button>
                                         </td>
                                     </tr>
-                                    <tr class="text-center">
-                                        <td>3</td>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
 
+                                    <tr class="text-center">
+                                        <td>1</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
                                         <td>
-                                            <a href="..//examples/payment-update.html"><button
+                                            <a href="..//examples/customer-update.html"><button
                                                     class="btn btn-success btn-sm mx-1"><i
                                                         class="bi bi-pencil-square pr-1"></i>Update</button></a>
                                             <button class="btn btn-danger btn-sm"><i

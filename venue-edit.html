@@ -1,18 +1,4 @@
-<!--
 
-=========================================================
-* Argon Dashboard - v1.1.2
-=========================================================
-
-* Product Page: https://www.creative-tim.com/product/argon-dashboard
-* Copyright 2020 Creative Tim (https://www.creative-tim.com)
-* Licensed under MIT (https://github.com/creativetimofficial/argon-dashboard/blob/master/LICENSE.md)
-
-* Coded by Creative Tim
-
-=========================================================
-
-* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software. -->
 <!DOCTYPE html>
 <html lang="en">
 
@@ -20,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>
-        Argon Dashboard - Free Dashboard for Bootstrap 4 by Creative Tim
+       Event Management System
     </title>
     <!-- Favicon -->
     <link href="../assets/img/brand/favicon.png" rel="icon" type="image/png">
@@ -31,6 +17,7 @@
     <link href="../assets/js/plugins/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet" />
     <!-- CSS Files -->
     <link href="../assets/css/argon-dashboard.css?v=1.1.2" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
 </head>
 
 <body class="">
@@ -43,7 +30,7 @@
             </button>
             <!-- Brand -->
             <a class="navbar-brand pt-0" href="../index.html">
-                <img src="../assets/img/brand/blue.png" class="navbar-brand-img" alt="...">
+                <img src="../assets/img/brand/logo.PNG" class="navbar-brand-img" alt="..."style="width: 150px; height:40px;">
             </a>
             <!-- User -->
             <ul class="nav align-items-center d-md-none">
@@ -143,50 +130,50 @@
                         </a>
                     <li class="nav-item">
                         <a class="nav-link" href="../examples/category-list.html">
-                            <i class="ni ni-circle-08 text-pink"></i>
+                          <i class="bi bi-list-task"></i> </i>
                             <h3>Category</h3>
                         </a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link " href="../examples/services-add.html">
-                            <i class="ni ni-bullet-list-67 text-red"></i>
+                            <i class="bi bi-person-lines-fill"></i>
                             <h3>Services</h3>
                         </a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link " href="../examples/services-add.html">
-                            <i class="ni ni-bullet-list-67 text-red"></i>
+                            <i class="bi bi-person-lines-fill"></i>
                             <h3>Visitors</h3>
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link " href="../examples/services-add.html">
-                            <i class="ni ni-bullet-list-67 text-red"></i>
+                        <a class="nav-link " href="../examples/customer-list.html">
+                            <i class="bi bi-person-lines-fill"></i>
                             <h3>Customers</h3>
                         </a>
                     </li>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link " href="../examples/Event-list.html">
-                            <i class="ni ni-pin-3 text-orange"></i>
-                            <h3> Events</h3>
-                        </a>
-                    </li>
+            <a class="nav-link " href="../examples/payment-list.html">
+              <i class="bi bi-credit-card"></i>
+              <h3> payment</h3>
+            </a>
+          </li>
                     <li class="nav-item">
                         <a class="nav-link " href="../examples/Event-list.html">
-                            <i class="ni ni-pin-3 text-orange"></i>
+                            <i class="bi bi-credit-card"></i>
                             <h3> Event_Service</h3>
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link " href="../examples/payment-list.html">
-                            <i class="ni ni-pin-3 text-orange"></i>
-                            <h3> payment</h3>
+                        <a class="nav-link " href="../examples/Event-list.html">
+                            <i class="bi bi-credit-card"></i>
+                            <h3> Payment</h3>
                         </a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link " href="../examples/Event-list.html">
-                            <i class="ni ni-pin-3 text-orange"></i>
+                            <i class="bi bi-credit-card"></i>
                             <h3> Feedback</h3>
                         </a>
                     </li>
@@ -214,16 +201,11 @@
 
                 <!-- <a class="h4 mb-0 text-white text-uppercase d-none d-lg-inline-block" href="../index.html">Venue</a> -->
                 <!-- <h1 style="color: white; font-family: Georgia, 'Times New Roman', Times, serif; font-weight: lighter;">
-                    Events</h1> -->
+                    Venue</h1> -->
 
                 <form class="navbar-search navbar-search-dark form-inline mr-3 d-none d-md-flex ml-auto">
                     <div class="form-group mb-0">
-                        <div class="input-group input-group-alternative">
-                            <div class="input-group-prepend">
-                                <span class="input-group-text input-group-text-sm"><i class="fas fa-search"></i></span>
-                            </div>
-                            <input class="form-control form-control-sm" placeholder="Search" type="text">
-                        </div>
+                        
                     </div>
                 </form>
 
@@ -236,7 +218,7 @@
                                     <img alt="Image placeholder" src="../assets/img/theme/team-4-800x800.jpg">
                                 </span>
                                 <div class="media-body ml-2 d-none d-lg-block">
-                                    <span class="mb-0 text-sm  font-weight-bold">Jessica Jones</span>
+                                    <span class="mb-0 text-sm  font-weight-bold">Aditya</span>
                                 </div>
                             </div>
                         </a>
@@ -276,14 +258,33 @@
 
         </div>
         <!-- Page content -->
-        <div class="container-fluid mt-4">
+         <nav aria-label="breadcrumb" class="pl-4 mt--0">
+      <h1 class="pl-3">Venue</h1>
+      <ol class="breadcrumb mt--4" style="background-color: transparent;">
+        <li class="breadcrumb-item"><a href="#">Home</a></li>
+        <li class="breadcrumb-item"><a href="#">Venue</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Update</li>
+        <li class="ml-auto pr-4">
+          <div class="btn-group" role="group" aria-label="Basic example">
+            <a href="../examples/venue-edit.html"> <button type="button" class="btn btn-secondary btn-md"
+                style="border-radius: 0%;">Update</button></a>
+            <a href="../examples/venue-lists.html"><button type="button" class="btn btn-info btn-md "
+                style="border-radius: 0%;">Service</button></a>
+          </div>
+        </li>
+      </ol>
+    </nav>
+        <div class="container-fluid mt--4">
             <div class="card shadow">
                 <!-- Card Header -->
-                <div
-                    class="card-header bg-primary text-white d-flex justify-content-between align-items-center flex-wrap">
-                    <h4 class="mb-0 text-white" style="font-size: 18px;">Update Venue</h4>
-                    <a href="..//examples/Venue_add.html" class="btn btn-danger mt-2 mt-md-0">Add</a>
-                </div>
+                <div class="header bg-primary text-white d-flex justify-content-between align-items-center flex-wrap">
+                <h4 class="pt-2 pl-3 text-white"
+                    style="font-size: 20px; font-family: Georgia, 'Times New Roman', Times, serif;">Venue</h4>
+                <!-- <a href="..//examples/category_add.html" class=" btn-warning btn-sm mr-2"
+                        style="border-radius: 0px; font-size: 13px;"><i class="bi bi-plus-lg"></i>Add New</a> -->
+                <!-- <li class="ml-auto"><a href="..//examples/category_add.html" class="btn btn-danger btn-sm "><i class="bi bi-plus-lg"></i>Entry</a>
+                </li> -->
+            </div>
 
 
                 <!-- Card Body -->
@@ -297,6 +298,7 @@
                             <div class="form-group col-md-6">
                                 <label for="venueName">Venue Name</label>
                                 <input type="text" class="form-control" id="venueName" placeholder="Enter Venue Name">
+                               
                             </div>
                         </div>
 
@@ -315,7 +317,7 @@
                                 </select>
                             </div>
                             <div class="col-md-4 mb-3">
-                                <label for="catering">State</label>
+                                <label for="catering">Distict</label>
                                 <select class="custom-select" id="catering" required>
                                     <option selected disabled value="">Choose...</option>
                                     <option>Available</option>
@@ -344,14 +346,16 @@
                             </div>
                             <div class="form-group col-md-3">
                                 <label for="gallery">Date</label>
-                                <input type="text" class="form-control" id="gallery" placeholder="">
+                                <input type="date" class="form-control" id="gallery" placeholder="">
                             </div>
                         </div>
 
                         <!-- Submit Button -->
                         <div class="text-center">
-                            <button type="submit" class="btn btn-success px-4">Update</button>
-                            <button type="submit" class="btn btn-danger px-4">Refresh</button>
+                            <button type="submit" class="btn btn-success px-4"><i
+                                class="bi bi-arrow-bar-up pr-1"></i>Update</button>
+                            <button type="submit" class="btn btn-danger px-4"><i
+                                class="bi bi-arrow-clockwise pr-1"></i>Refresh</button>
                         </div>
                     </form>
                 </div>

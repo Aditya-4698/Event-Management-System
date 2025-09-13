@@ -1,4 +1,18 @@
+<!--
 
+=========================================================
+* Argon Dashboard - v1.1.2
+=========================================================
+
+* Product Page: https://www.creative-tim.com/product/argon-dashboard
+* Copyright 2020 Creative Tim (https://www.creative-tim.com)
+* Licensed under MIT (https://github.com/creativetimofficial/argon-dashboard/blob/master/LICENSE.md)
+
+* Coded by Creative Tim
+
+=========================================================
+
+* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software. -->
 <!DOCTYPE html>
 <html lang="en">
 
@@ -6,7 +20,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>
-       Event Management System
+        Argon Dashboard - Free Dashboard for Bootstrap 4 by Creative Tim
     </title>
     <!-- Favicon -->
     <link href="../assets/img/brand/favicon.png" rel="icon" type="image/png">
@@ -31,7 +45,7 @@
             </button>
             <!-- Brand -->
             <a class="navbar-brand pt-0" href="../index.html">
-                <img src="../assets/img/brand/logo.PNG" class="navbar-brand-img" alt="..."style="width: 150px; height:40px;">
+                <img src="../assets/img/brand/blue.png" class="navbar-brand-img" alt="...">
             </a>
             <!-- User -->
             <ul class="nav align-items-center d-md-none">
@@ -133,7 +147,7 @@
                         </a>
                     <li class="nav-item">
                         <a class="nav-link" href="../examples/category-list.html">
-                           <i class="bi bi-list-task"></i> </i>
+                            <i class="bi bi-list-task"></i> </i>
                             <h3>Category</h3>
                         </a>
                     </li>
@@ -144,13 +158,13 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link " href="../examples/visitors_lists.html">
+                        <a class="nav-link " href="../examples/visitors_add.html">
                             <i class="bi bi-person-lines-fill"></i>
                             <h3>Visitors</h3>
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link " href="../examples/customer-list.html">
+                        <a class="nav-link " href="../examples/customer-add.html">
                             <i class="bi bi-person-lines-fill"></i>
                             <h3>Customers</h3>
                         </a>
@@ -175,7 +189,7 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link " href="../examples/feedback-list.html">
+                        <a class="nav-link " href="../examples/Event-list.html">
                             <i class="bi bi-credit-card"></i>
                             <h3> Feedback</h3>
                         </a>
@@ -208,9 +222,14 @@
                 <!-- <h1 style="color: white; font-family: Georgia, 'Times New Roman', Times, serif; font-weight: lighter;">Events</h1> -->
                 <!-- Form -->
                 <form class="navbar-search navbar-search-dark form-inline mr-3 d-none d-md-flex ml-lg-auto">
-                    <div class="form-group mb-">
-
-                    </div>
+                    <!-- <div class="form-group mb-">
+                        <div class="input-group input-group-alternative input-group-sm">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text "><i class="fas fa-search"></i></span>
+                            </div>
+                            <input class="form-control form-control-sm" placeholder="Search" type="text">
+                        </div>
+                    </div> -->
                 </form>
                 <!-- User -->
                 <ul class="navbar-nav align-items-center d-none d-md-flex">
@@ -261,17 +280,17 @@
         <div class="header bg-gradient-primary  pt-md-6" style="height: fit-content;">
 
         </div>
-        <nav aria-label="breadcrumb" class="pl-4 pt-2">
-            <h1 class="pl-3">Services</h1>
+        <nav aria-label="breadcrumb" class="pl-4 mt-3">
+            <h1 class="pl-3">Customer</h1>
             <ol class="breadcrumb mt--3" style="background-color:transparent;">
                 <li class="breadcrumb-item"><a href="#">Home</a></li>
-                <li class="breadcrumb-item"><a href="#">Service</a></li>
+                <li class="breadcrumb-item"><a href="#">Customer</a></li>
                 <li class="breadcrumb-item active" aria-current="page">Entry</li>
                 <li class="ml-auto pr-4">
                     <div class="btn-group" role="group" aria-label="Basic example">
-                        <a href="../examples/services-add.html"> <button type="button" class="btn btn-secondary  btn-md"
+                        <a href="../examples/customer-add.html"> <button type="button" class="btn btn-secondary  btn-md"
                                 style="border-radius: 0%;">ENTRY</button></a>
-                        <a href="../examples/services-lists.html"><button type="button" class="btn btn-info btn-md"
+                        <a href="../examples/customer-list.html"><button type="button" class="btn btn-info btn-md"
                                 style="border-radius: 0%;">SERVICE</button></a>
                     </div>
                 </li>
@@ -291,34 +310,69 @@
                     <!-- Event Form -->
                     <form class="needs-validation" novalidate>
                         <div class="form-row">
-                            <div class="col-md-4 mb-3">
-                                <label for="validationCustom01">Service ID</label>
+                            <div class="col-md-3 mb-3">
+                                <label for="validationCustom01">Customer ID</label>
                                 <input type="text" class="form-control" id="validationCustom01"
-                                    placeholder="Enter Service ID" required>
+                                    placeholder="Enter customer ID" required>
                             </div>
-                            <div class="col-md-4 mb-3">
-                                <label for="validationCustom02">Category</label>
-                                <!-- Default select -->
-                                <select class="form-control" id="exampleSelect">
-                                    <option selected>Select category</option>
-                                    <option value="1">Option 1</option>
-                                    <option value="2">Option 2</option>
-                                    <option value="3">Option 3</option>
-                                </select>
+                            <div class="col-md-3 mb-3">
+                                <label for="validationCustom02">Name</label>
+                                <input type="text" class="form-control" id="validationCustom01" placeholder="Enter name"
+                                    required>
+
                             </div>
-                            <div class="col-md-4 mb-3">
-                                <label for="validationCustom03">Name</label>
+                            <div class="col-md-3 mb-3">
+                                <label for="validationCustom03">Contact</label>
                                 <input type="text" class="form-control" id="validationCustom03"
-                                    placeholder="Enter Services name" required>
+                                    placeholder="Enter contact" required>
+                            </div>
+                            <div class="col-md-3 mb-3">
+                                <label for="validationCustom03">Alt-Contact</label>
+                                <input type="text" class="form-control" id="validationCustom03"
+                                    placeholder="Enter alt_contact" required>
                             </div>
                         </div>
                         <div class="form-row">
-
-                            <div class="col-md-12 mb-3">
-                                <label for="validationCustom05">Description</label>
-                                <textarea name="" id="" rows="5" style="resize: none;" class="form-control"
-                                    placeholder="Enter Description"></textarea>
+                            <div class="col-md-4 mb-3">
+                                <label for="validationCustom05">Destrict</label>
+                                <input type="text" class="form-control" id="validationCustom03"
+                                    placeholder="Enter Destrict" required>
                             </div>
+
+                            <div class="col-md-4 mb-3">
+                                <label for="validationCustom05">State</label>
+                                <input type="text" class="form-control" id="validationCustom03"
+                                    placeholder="Enter State" required>
+                            </div>
+
+                            <div class="col-md-4 mb-3">
+                                <label for="validationCustom05">Pin_code</label>
+                                <input type="text" class="form-control" id="validationCustom03"
+                                    placeholder="Enter Pin_code" required>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="col-md-12 mb-3">
+                                <label for="validationCustom05">Address</label>
+                                <textarea name="" id="" rows="1" style="resize: none;" class="form-control"
+                                    placeholder="Enter Address"></textarea>
+                            </div>
+                        </div>
+
+
+                        <div class="form-row">
+                            <div class="col-md-6 mb-3">
+                                <label for="validationCustom05">Addhar no.</label>
+                                <input type="text" class="form-control" id="validationCustom03"
+                                    placeholder="Enter addhar no." required>
+                            </div>
+
+                            <div class="col-md-6 mb-3">
+                                <label for="validationCustom05">Addhar</label>
+                                <input type="file" class="form-control" id="validationCustom03" required>
+                            </div>
+
                         </div>
 
                         <div class="text-center">
